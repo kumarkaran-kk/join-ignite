@@ -6,7 +6,7 @@ if (PHP_SAPI === 'cli-server') $base = '';
 $route = substr($path, strlen($base));
 if (PHP_SAPI === 'cli-server' && preg_match('~^/(?:assets/|(?:index|brainify)\.html$)~', $route)) return false;
 $slugs = array_merge(['brainify'], array_keys(json_decode(file_get_contents(__DIR__ . '/data/pages.json'), true)));
-if (preg_match('~^/(?:(kk|ru)/)?([a-z-]*)(?:/|\.php)?$~', $route, $matches)) {
+if (preg_match('~^/(?:(en|kk|ru)/)?([a-z-]*)(?:/|\.php)?$~', $route, $matches)) {
     $slug = $matches[2];
     if ($slug === '' || $slug === 'index' || in_array($slug, $slugs, true)) {
         if (!defined('IGNITE_ROUTED')) define('IGNITE_ROUTED', true);

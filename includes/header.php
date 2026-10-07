@@ -14,7 +14,7 @@ $escape = static fn($value) => htmlspecialchars($value, ENT_QUOTES, 'UTF-8');
     <?php foreach ($supportedLocales as $language => $languageName): ?>
         <link rel="alternate" hreflang="<?= $language ?>" href="<?= $escape($localeUrl($language, $pageSlug)) ?>">
     <?php endforeach; ?>
-    <link rel="alternate" hreflang="x-default" href="<?= $escape($localeUrl('en', $pageSlug)) ?>">
+    <link rel="alternate" hreflang="x-default" href="<?= $escape($localeUrl('kk', $pageSlug)) ?>">
     <link rel="canonical" href="<?= $escape($localeUrl($locale, $pageSlug)) ?>">
     <meta name="description" content="<?= $escape($pageDescription) ?>">
     <title><?= $escape($pageTitle) ?></title>

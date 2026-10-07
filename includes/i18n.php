@@ -4,19 +4,24 @@ $supportedLocales = ['en' => 'English', 'kk' => 'Қазақша', 'ru' => 'Ру�
 $requestPath = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH);
 $basePath = rtrim(str_replace('\\', '/', dirname($_SERVER['SCRIPT_NAME'])), '/.');
 $relativePath = substr($requestPath, strlen($basePath));
-$locale = preg_match('~^/(kk|ru)(?:/|$)~', $relativePath, $localeMatch) ? $localeMatch[1] : 'en';
+$hasExplicitLocale = preg_match('~^/(en|kk|ru)(?:/|$)~', $relativePath, $localeMatch);
+$locale = $hasExplicitLocale ? $localeMatch[1] : 'kk';
 $pageSlug = ($pageId ?? 'home') === 'home' ? '' : ($pageId === 'brainify' ? 'brainify' : $pageId);
 $localeUrl = static function ($language, $slug = '') use ($basePath) {
-    return $basePath . '/' . ($language === 'en' ? '' : $language . '/') . ($slug === '' ? '' : $slug . '/');
+    return $basePath . '/' . $language . '/' . ($slug === '' ? '' : $slug . '/');
 };
 if (isset($_GET['language']) && is_string($_GET['language']) && isset($supportedLocales[$_GET['language']])) {
     $chosen = $_GET['language'];
     setcookie('ignite_language', $chosen, ['expires' => time() + 31536000, 'path' => $basePath . '/', 'secure' => !empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off', 'httponly' => true, 'samesite' => 'Lax']);
     header('Location: ' . $localeUrl($chosen, $pageSlug), true, 302); exit;
 }
-// A remembered preference is used only for entry at the bare homepage.
-if ($relativePath === '/' && isset($_COOKIE['ignite_language']) && in_array($_COOKIE['ignite_language'], ['kk', 'ru'], true)) {
-    header('Location: ' . $localeUrl($_COOKIE['ignite_language']), true, 302); exit;
+// Unprefixed entry URLs use a saved choice, or Kazakh for new visitors.
+// Explicit language URLs always win, including English at /en/.
+if (!$hasExplicitLocale) {
+    $preferred = $_COOKIE['ignite_language'] ?? 'kk';
+    if (!is_string($preferred) || !isset($supportedLocales[$preferred])) $preferred = 'kk';
+    $query = $_GET ? '?' . http_build_query($_GET) : '';
+    header('Location: ' . $localeUrl($preferred, $pageSlug) . $query, true, 302); exit;
 }
 $translations = json_decode(file_get_contents(__DIR__ . '/../locales/' . $locale . '.json'), true, 512, JSON_THROW_ON_ERROR);
 $clientDictionary = __DIR__ . '/../locales/client-' . $locale . '.json';
