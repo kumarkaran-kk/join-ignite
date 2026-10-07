@@ -12,6 +12,7 @@
     const clone = card => {
         const copy = card.cloneNode(true);
         copy.setAttribute('aria-hidden', 'true');
+        copy.tabIndex = -1;
         return copy;
     };
     track.prepend(...cards.map(clone));

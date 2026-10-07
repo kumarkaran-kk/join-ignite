@@ -1,5 +1,15 @@
 /* One compact top row; secondary actions live inside the mobile menu. */
 .menu-icon{display:none}
+@media(min-width:1101px){
+    html body .navigation{display:grid;grid-template-columns:auto minmax(0,1fr) auto auto;gap:clamp(14px,1.5vw,28px);margin:0 4%;height:clamp(100px,8.3vw,158px)}
+    html body .navigation .brand{margin:0}
+    html body .navigation .brand img{width:clamp(60px,5.3vw,102px);height:auto}
+    html body .navigation nav{display:flex;min-width:0;justify-content:space-between;gap:clamp(12px,1.4vw,26px)}
+    html body .navigation nav a{font-size:clamp(12px,.98vw,18px);line-height:1.4;white-space:normal}
+    html body .navigation>.pill{width:auto;max-width:none;min-width:0;height:auto;min-height:44px;padding:12px 18px;font-size:clamp(12px,.95vw,18px);line-height:1.35;white-space:nowrap;gap:10px}
+    html body .navigation>.language{min-width:84px}
+    html body .navigation>.language img,html body .navigation>.language .motion-icon{width:22px;height:22px}
+}
 @media(max-width:1100px){
     body.mobile-menu-open{overflow:hidden}
     html body .navigation{height:80px;margin:0;padding:0 20px;gap:16px;position:relative;z-index:50;background:#00163df5;border-bottom:1px solid #ffffff20;font-size:14px}

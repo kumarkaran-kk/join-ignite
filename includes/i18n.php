@@ -1,6 +1,6 @@
 <?php
 // Local dictionaries keep translations independent of page layout and external services.
-$supportedLocales = ['en' => 'English', 'kk' => 'Қазақша', 'ru' => 'Русский'];
+$supportedLocales = ['kk' => 'Қазақша', 'ru' => 'Русский'];
 $requestPath = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH);
 $basePath = rtrim(str_replace('\\', '/', dirname($_SERVER['SCRIPT_NAME'])), '/.');
 $relativePath = substr($requestPath, strlen($basePath));
@@ -10,13 +10,18 @@ $pageSlug = ($pageId ?? 'home') === 'home' ? '' : ($pageId === 'brainify' ? 'bra
 $localeUrl = static function ($language, $slug = '') use ($basePath) {
     return $basePath . '/' . $language . '/' . ($slug === '' ? '' : $slug . '/');
 };
-if (isset($_GET['language']) && is_string($_GET['language']) && isset($supportedLocales[$_GET['language']])) {
-    $chosen = $_GET['language'];
+if (isset($_GET['language']) && is_string($_GET['language']) && (isset($supportedLocales[$_GET['language']]) || $_GET['language'] === 'en')) {
+    $chosen = $_GET['language'] === 'en' ? 'kk' : $_GET['language'];
     setcookie('ignite_language', $chosen, ['expires' => time() + 31536000, 'path' => $basePath . '/', 'secure' => !empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off', 'httponly' => true, 'samesite' => 'Lax']);
     header('Location: ' . $localeUrl($chosen, $pageSlug), true, 302); exit;
 }
 // Unprefixed entry URLs use a saved choice, or Kazakh for new visitors.
-// Explicit language URLs always win, including English at /en/.
+// Existing English URLs fall back to Kazakh while English is unavailable.
+if ($hasExplicitLocale && $locale === 'en') {
+    $query = $_GET ? '?' . http_build_query($_GET) : '';
+    header('Location: ' . $localeUrl('kk', $pageSlug) . $query, true, 302); exit;
+}
+// Explicit supported language URLs always win.
 if (!$hasExplicitLocale) {
     $preferred = $_COOKIE['ignite_language'] ?? 'kk';
     if (!is_string($preferred) || !isset($supportedLocales[$preferred])) $preferred = 'kk';

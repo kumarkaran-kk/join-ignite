@@ -1,6 +1,51 @@
 const menu = document.querySelector('.menu-toggle');
 const navigation = document.querySelector('#main-navigation');
 const compactHeader = matchMedia('(max-width: 1100px)');
+const navGroups = [...navigation.querySelectorAll('.nav-group')];
+function closeSubmenus(except = null) {
+    navGroups.forEach(group => {
+        if(group === except) return;
+        group.querySelector('.nav-group-toggle').setAttribute('aria-expanded', 'false');
+        group.querySelector('.nav-submenu').hidden = true;
+    });
+}
+function openSubmenu(group) {
+    closeSubmenus(group);
+    group.querySelector('.nav-group-toggle').setAttribute('aria-expanded', 'true');
+    group.querySelector('.nav-submenu').hidden = false;
+}
+navGroups.forEach(group => {
+    const toggle = group.querySelector('.nav-group-toggle');
+    toggle.addEventListener('click', event => {
+        if(!compactHeader.matches && event.detail > 0) {openSubmenu(group);return;}
+        if(toggle.getAttribute('aria-expanded') === 'true') closeSubmenus();
+        else openSubmenu(group);
+    });
+    group.addEventListener('pointerenter', event => {
+        if(!compactHeader.matches && event.pointerType === 'mouse') openSubmenu(group);
+    });
+    group.addEventListener('pointerleave', () => {
+        if(!compactHeader.matches && !group.contains(document.activeElement)) {
+            toggle.setAttribute('aria-expanded', 'false');
+            group.querySelector('.nav-submenu').hidden = true;
+        }
+    });
+    group.addEventListener('focusout', () => {
+        requestAnimationFrame(() => {if(!group.contains(document.activeElement)) {
+            toggle.setAttribute('aria-expanded', 'false');
+            group.querySelector('.nav-submenu').hidden = true;
+        }});
+    });
+    group.addEventListener('keydown', event => {
+        if(event.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
+            event.preventDefault();event.stopPropagation();closeSubmenus();toggle.focus();
+        }
+        if(event.key === 'ArrowDown' && event.target === toggle) {
+            event.preventDefault();openSubmenu(group);group.querySelector('.nav-submenu a').focus();
+        }
+    });
+});
+document.addEventListener('click', event => {if(!navigation.contains(event.target)) closeSubmenus();});
 const mobileActions = document.createElement('div');
 mobileActions.className = 'mobile-menu-actions';
 const headerActions = ['.search-toggle', '.language', '.login'].map(selector => {
@@ -11,6 +56,7 @@ const headerActions = ['.search-toggle', '.language', '.login'].map(selector => 
     return {element, marker};
 }).filter(Boolean);
 function closeMenu(restoreFocus = false) {
+    closeSubmenus();
     navigation.classList.remove('open');
     menu.setAttribute('aria-expanded', 'false');
     document.body.classList.remove('mobile-menu-open');
@@ -41,7 +87,7 @@ document.addEventListener('keydown', event => {
     if(!compactHeader.matches || !navigation.classList.contains('open')) return;
     if(event.key === 'Escape') {event.preventDefault();closeMenu(true);}
     if(event.key === 'Tab') {
-        const focusable = [menu, ...navigation.querySelectorAll('a[href],button')];
+        const focusable = [menu, ...navigation.querySelectorAll('a[href],button')].filter(element => element.getClientRects().length);
         const first = focusable[0], last = focusable[focusable.length - 1];
         if(event.shiftKey && document.activeElement === first) {event.preventDefault();last.focus();}
         else if(!event.shiftKey && document.activeElement === last) {event.preventDefault();first.focus();}

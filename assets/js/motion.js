@@ -72,6 +72,7 @@
     // Preserve the exported colored SVGs rather than approximating their colors with filters.
     function addIconStates(selector,hoverAsset,kind='arrow') {
         const img=document.querySelector(selector);
+        if(!img)return;
         const wrapper=document.createElement('span');
         wrapper.className=`motion-icon motion-icon-${kind}`;wrapper.setAttribute('aria-hidden','true');
         img.before(wrapper);wrapper.append(img);

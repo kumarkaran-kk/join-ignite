@@ -1,11 +1,51 @@
 /* Local imagery uses the existing layout; the ornament is original decorative artwork. */
+html body .journey-slide img.kazakhstan-people{inset:0;width:100%;height:100%;object-fit:cover;object-position:center;transform:none}
 html body .hero .kazakhstan-slide img{inset:0;width:100%;height:100%;object-fit:cover;object-position:center;transform:none;filter:saturate(.55)}
 .kazakhstan-slide:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,16,43,.83),rgba(0,22,61,.5) 52%,rgba(0,22,61,.15));pointer-events:none}
 html body .hero .kazakhstan-slide:nth-child(2) img{object-position:center 48%;filter:saturate(.6)}
 html body #support{position:relative}
 html body #support:before{content:"";position:absolute;inset:0 0 auto;height:40px;background:url('../images/kazakhstan/ornament.svg') repeat-x center;opacity:.2;pointer-events:none}
 .page-hero:before,.brainify-hero:before{content:"";position:absolute;inset:auto 0 0;height:40px;background:url('../images/kazakhstan/ornament.svg') repeat-x center;opacity:.32;pointer-events:none;z-index:1}
-.learning-copy:before{content:"";display:block;width:120px;height:40px;margin-bottom:16px;background:url('../images/kazakhstan/ornament.svg') no-repeat center}
+.learning-copy:before{content:none}
+/* Decorative flag details, kept behind the content and never interactive.
+   Vector source: https://flagcdn.com/kz.svg (Kazakhstan state flag).
+   Sun/eagle and hoist ornament are separated without changing their shapes. */
+html body .hero{isolation:isolate}
+html body .hero .hero-background{z-index:-1}
+html body .hero:before,
+html body .page-hero:before,
+html body .brainify-hero:before{
+ content:"";position:absolute;inset:0;z-index:0;pointer-events:none;
+ background:url('../images/kazakhstan/flag-sun-eagle.svg') no-repeat right 7% center / clamp(220px,31vw,500px) auto,
+            url('../images/kazakhstan/flag-ornament.svg') repeat-y left 18px top / 34px auto;
+ opacity:.085;
+}
+html body .hero .hero-copy{z-index:1}
+html body .hero:before{background-image:url('../images/kazakhstan/flag-ornament.svg');background-position:left 18px top;background-size:34px auto;background-repeat:repeat-y}
+html body .hero .navigation{z-index:2}
+html body .learning{position:relative;isolation:isolate}
+html body .learning:after{
+ content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+ background:url('../images/kazakhstan/flag-sun-eagle.svg') no-repeat left -45px bottom -25px / clamp(240px,29vw,440px) auto;
+ opacity:.11;
+}
+html body #support{isolation:isolate}
+html body #support:before{
+ inset:0;height:auto;z-index:0;
+ background:url('../images/kazakhstan/flag-sun-eagle.svg') no-repeat right 6% bottom 40px / clamp(250px,30vw,440px) auto,
+            url('../images/kazakhstan/flag-ornament.svg') repeat-y left 12px top / 28px auto;
+ opacity:.055;
+}
+html body #support .footer-main{position:relative;z-index:1}
+@media(max-width:700px){
+ html body .hero:before,html body .page-hero:before,html body .brainify-hero:before{
+  background-position:right -45px bottom 45px,left 5px top;
+  background-size:240px auto,18px auto;opacity:.065;
+ }
+ html body .learning:after{background-size:250px auto;opacity:.085}
+ html body .hero:before{background-position:left 5px top;background-size:18px auto}
+ html body #support:before{background-size:280px auto,18px auto;background-position:right -70px bottom 90px,left 4px top;opacity:.045}
+}
 @media(max-width:1100px){html body .mobile-menu-actions:not(:has(.search-toggle)) .language{grid-column:1/-1}}
 @media(max-width:700px){
  html body .hero .kazakhstan-slide img{object-position:58% center}

@@ -70,7 +70,7 @@
     "eyebrow": "KEEP EXPLORING",
     "heading": "Your next step starts here.",
     "intro": "Find learning opportunities, company news, official documents and answers in one place.",
-    "image": "learning.png",
+    "image": "kazakhstan/almaty-learning.jpg",
     "section": "Choose what you need",
     "cards": [
       [
@@ -144,7 +144,7 @@
     "eyebrow": "LEARN. CONNECT. APPLY.",
     "heading": "Make time for your next breakthrough.",
     "intro": "Explore product learning opportunities. Contact our team for session dates and joining details.",
-    "image": "learning.png",
+    "image": "kazakhstan/almaty-learning.jpg",
     "section": "Explore learning opportunities",
     "cards": [
       [
@@ -405,6 +405,11 @@
         "https://tech.asialogue.com/news/brainify-launches-as-a-next-generation-ai-powered-e-learning-ecosystem-where-learning-turns-into-real-world-building/546265"
       ],
       [
+        "Africa Trade Monitor",
+        "africa.png",
+        "https://africatrademonitor.com/why-chief-pathman-left-qnet/"
+      ],
+      [
         "Financial Capital",
         "financial.png",
         "https://thefinancialcapital.com/news/brainify-launches-as-a-next-generation-ai-powered-e-learning-ecosystem-where-learning-turns-into-real-world-building/546265"
@@ -589,7 +594,7 @@
     "heading": "Build Your Business",
     "eyebrow": "YOUR NEXT CHAPTER",
     "intro": "Develop product knowledge, support customers and keep learning as you build your independent business.",
-    "image": "learning.png",
+    "image": "kazakhstan/almaty-learning.jpg",
     "section": "Put learning into practice",
     "cards": [
       [

@@ -1,0 +1,25 @@
+/* Shared disclosure navigation: the same links serve desktop and mobile. */
+.brainify-header{position:relative;z-index:10}
+html body .navigation .nav-group{position:relative;min-width:0}
+html body .navigation .nav-group-toggle{display:flex;align-items:center;justify-content:space-between;gap:8px;width:100%;border:0;padding:14px 0;background:transparent;color:inherit;font:inherit;font-size:clamp(12px,.98vw,18px);line-height:1.4;text-align:left;cursor:pointer}
+html body .navigation .nav-group-toggle:after{content:"";flex:none;width:6px;height:6px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:translateY(-2px) rotate(45deg);transition:transform .2s}
+html body .navigation .nav-group-toggle[aria-expanded=true]:after{transform:translateY(2px) rotate(225deg)}
+@media(prefers-reduced-motion:reduce){html body .navigation .nav-group-toggle:after{transition:none}}
+html body .navigation .nav-group-toggle[aria-expanded=true]{color:#ffc72c}
+html body .navigation .nav-group-toggle:focus-visible{outline:2px solid #ffc72c;outline-offset:5px;border-radius:3px}
+html body .navigation .nav-submenu{position:absolute;top:100%;left:-18px;width:300px;max-width:calc(100vw - 48px);padding:10px;background:#fff;border:1px solid #dfe6f0;border-radius:14px;box-shadow:0 16px 40px #00163d33;z-index:20}
+html body .navigation .nav-submenu[hidden]{display:none}
+html body .navigation .nav-submenu a{display:block;padding:12px 14px;min-height:44px;border:0;border-radius:8px;color:#00163d;font:500 14px/1.5 Arial,sans-serif;white-space:normal;overflow-wrap:anywhere;text-decoration:none}
+html body .navigation .nav-submenu a:hover,html body .navigation .nav-submenu a:focus-visible{background:#edf3fa;color:#184598;outline:0}
+html body .navigation .nav-submenu a[aria-current=page]{background:#edf3fa;color:#184598;box-shadow:inset 3px 0 #ffc72c}
+@media(min-width:1101px){
+ html body .navigation .nav-group:last-child .nav-submenu{left:auto;right:-18px}
+}
+@media(max-width:1100px){
+ body.mobile-menu-open>.hero,body.mobile-menu-open>.brainify-header{position:relative;z-index:100}
+ html body .navigation #main-navigation>.nav-group{flex:none;border-bottom:1px solid #ffffff20}
+ html body .navigation .nav-group-toggle{min-height:62px;padding:17px 0;font:500 16px/1.5 Arial,sans-serif}
+ html body .navigation .nav-submenu{position:static;width:100%;max-width:none;padding:0 0 14px 12px;border:0;border-radius:0;background:transparent;box-shadow:none}
+ html body .navigation .nav-submenu a{color:#c9d7eb;padding:12px 14px;font-size:15px}
+ html body .navigation .nav-submenu a:hover,html body .navigation .nav-submenu a:focus-visible,html body .navigation .nav-submenu a[aria-current=page]{background:#ffffff0d;color:#ffc72c}
+}

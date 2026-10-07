@@ -85,11 +85,11 @@ require __DIR__ . '/includes/header.php';
                     </svg></button>
                 <div class="coverage-window">
                     <div class="coverage-track" id="coverage-track">
-                        <div class="coverage-card"><img src="assets/images/world.png" alt="The World Agenda"></div>
-                        <div class="coverage-card"><img src="assets/images/voyage.png" alt="Voyage Times"></div>
-                        <div class="coverage-card"><img src="assets/images/tech-asialogue.png" alt="Tech Asialogue"></div>
-                        <div class="coverage-card"><img src="assets/images/africa.png" alt="Africa Trade Monitor"></div>
-                        <div class="coverage-card"><img src="assets/images/financial.png" alt="Financial Capital"></div>
+                        <a class="coverage-card" href="https://theworldagenda.com/news/brainify-launches-as-a-next-generation-ai-powered-e-learning-ecosystem-where-learning-turns-into-real-world-building/546265" target="_blank" rel="noopener noreferrer"><img src="assets/images/world.png" alt="The World Agenda"></a>
+                        <a class="coverage-card" href="https://voyagetimes.com/news/brainify-launches-as-a-next-generation-ai-powered-e-learning-ecosystem-where-learning-turns-into-real-world-building/546265" target="_blank" rel="noopener noreferrer"><img src="assets/images/voyage.png" alt="Voyage Times"></a>
+                        <a class="coverage-card" href="https://tech.asialogue.com/news/brainify-launches-as-a-next-generation-ai-powered-e-learning-ecosystem-where-learning-turns-into-real-world-building/546265" target="_blank" rel="noopener noreferrer"><img src="assets/images/tech-asialogue.png" alt="Tech Asialogue"></a>
+                        <a class="coverage-card" href="https://africatrademonitor.com/why-chief-pathman-left-qnet/" target="_blank" rel="noopener noreferrer"><img src="assets/images/africa.png" alt="Africa Trade Monitor"></a>
+                        <a class="coverage-card" href="https://thefinancialcapital.com/news/brainify-launches-as-a-next-generation-ai-powered-e-learning-ecosystem-where-learning-turns-into-real-world-building/546265" target="_blank" rel="noopener noreferrer"><img src="assets/images/financial.png" alt="Financial Capital"></a>
                     </div>
                 </div>
                 <button class="coverage-arrow coverage-next" type="button" aria-label="Next publication"
@@ -110,8 +110,8 @@ require __DIR__ . '/includes/header.php';
             <div class="journey" data-node-id="2149:342">
                 <div class="journey-track" aria-hidden="true">
                     <div class="journey-slide"><img src="assets/images/journey.png" alt=""></div>
-                    <div class="journey-slide"><img src="assets/images/journey-choice.png" alt=""></div>
-                    <div class="journey-slide"><img src="assets/images/journey-future.png" alt=""></div>
+                    <div class="journey-slide"><img class="kazakhstan-people" src="assets/images/kazakhstan/almaty-team.jpg" alt=""></div>
+                    <div class="journey-slide"><img class="kazakhstan-people" src="assets/images/kazakhstan/almaty-entrepreneur.jpg" alt=""></div>
                 </div>
                 <h2 aria-label="Your journey. Your choice. Your future."><span class="journey-words"
                         aria-hidden="true"><span>YOUR JOURNEY</span><span>YOUR CHOICE</span><span>YOUR

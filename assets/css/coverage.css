@@ -7,6 +7,7 @@
 .coverage-window{width:85.8%;margin:auto;overflow:hidden;padding:8px 5px}
 .coverage-track{display:flex;gap:var(--coverage-gap);transition:transform 550ms cubic-bezier(.22,.61,.36,1);will-change:transform}
 .coverage-card{flex:0 0 calc((100% - (var(--visible) - 1) * var(--coverage-gap)) / var(--visible));aspect-ratio:1;background:#f4f7fc;border-radius:calc(19 * var(--coverage-scale));box-shadow:0 0 7px #00000020;display:flex;align-items:center;justify-content:center;padding:0}
+.coverage-card:focus-visible{outline:3px solid #19479d;outline-offset:-4px}
 .coverage-card img{width:100%;height:42%;object-fit:contain;mix-blend-mode:multiply}
 .coverage-card img[src*="voyage"]{width:69%}
 .coverage-card img[src*="tech-asialogue"]{width:98%}
