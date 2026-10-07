@@ -1,0 +1,621 @@
+{
+  "about": {
+    "title": "About IGNITE",
+    "eyebrow": "PEOPLE. PURPOSE. POSSIBILITY.",
+    "heading": "Progress begins with people.",
+    "intro": "IGNITE brings products, education and independent entrepreneurship together through a global social commerce community.",
+    "image": "about.png",
+    "section": "A shared direction",
+    "cards": [
+      [
+        "People first",
+        "Build relationships around respect, open communication and long-term partnership.",
+        "leadership.php",
+        "Meet the leadership"
+      ],
+      [
+        "Learning for tomorrow",
+        "Explore practical digital skills through brAInify, our education offering.",
+        "brainify.php",
+        "Explore brAInify"
+      ],
+      [
+        "Opportunity with purpose",
+        "Get to know the business, ask questions and review the official policies before taking your next step.",
+        "business.php",
+        "Explore the opportunity"
+      ]
+    ]
+  },
+  "business": {
+    "title": "Business Opportunity",
+    "eyebrow": "YOUR NEXT CHAPTER",
+    "heading": "Build with people. Grow with purpose.",
+    "intro": "Explore IGNITE’s independent Brand Affiliate model and the products, learning resources and community behind it.",
+    "image": "journey.png",
+    "section": "Start with understanding",
+    "cards": [
+      [
+        "Discover the products",
+        "Start with the product experience and the needs of the people you want to serve.",
+        "brainify.php",
+        "Explore our product"
+      ],
+      [
+        "Understand the relationship",
+        "Brand Affiliates work independently. Review the official requirements, policies and responsibilities.",
+        "policies.php",
+        "Review policies"
+      ],
+      [
+        "Talk before you join",
+        "Use IGNITE’s official contact channel to ask about eligibility, local availability and the correct registration process.",
+        "contact.php",
+        "Contact IGNITE"
+      ]
+    ],
+    "faqs": [
+      [
+        "Are earnings guaranteed?",
+        "No. IGNITE’s official FAQ rejects investment packages and guaranteed returns. Review the official business terms before making a decision."
+      ],
+      [
+        "How do I register?",
+        "Contact IGNITE through its official channels for the registration route and requirements applicable to your country."
+      ]
+    ]
+  },
+  "resources": {
+    "title": "Resources",
+    "eyebrow": "KEEP EXPLORING",
+    "heading": "Your next step starts here.",
+    "intro": "Find learning opportunities, company news, official documents and answers in one place.",
+    "image": "learning.png",
+    "section": "Choose what you need",
+    "cards": [
+      [
+        "Training & Events",
+        "Explore product learning opportunities and ask about upcoming sessions.",
+        "events.php",
+        "Find training"
+      ],
+      [
+        "IGNITE Journal",
+        "Explore company announcements and product stories.",
+        "blog.php",
+        "Read the journal"
+      ],
+      [
+        "Media Coverage",
+        "Discover selected publication features covering IGNITE and brAInify.",
+        "media.php",
+        "Explore coverage"
+      ],
+      [
+        "Policies",
+        "Find policy topics and how to request more information.",
+        "policies.php",
+        "Browse documents"
+      ],
+      [
+        "Help Centre",
+        "Find the right place for product, account and order questions.",
+        "help.php",
+        "Get help"
+      ],
+      [
+        "Frequently Asked Questions",
+        "Quick answers about this website and the IGNITE community.",
+        "faqs.php",
+        "Find answers"
+      ]
+    ]
+  },
+  "blog": {
+    "title": "IGNITE Journal",
+    "eyebrow": "NEWS & PERSPECTIVES",
+    "heading": "Stories from the IGNITE community.",
+    "intro": "Company announcements and perspectives from the official IGNITE journal.",
+    "image": "about-hover.png",
+    "section": "From the official journal",
+    "cards": [
+      [
+        "Corporate independence",
+        "1 October 2026 · IGNITE issued a company announcement about its corporate standing.",
+        null,
+        null
+      ],
+      [
+        "Introducing IGNITE",
+        "16 April 2026 · An introduction to the company’s approach to community and entrepreneurship.",
+        null,
+        null
+      ],
+      [
+        "Discover brAInify",
+        "Explore the learning platform and its six digital skill pathways.",
+        "brainify.php",
+        "Explore the product"
+      ]
+    ]
+  },
+  "events": {
+    "title": "Training & Events",
+    "eyebrow": "LEARN. CONNECT. APPLY.",
+    "heading": "Make time for your next breakthrough.",
+    "intro": "Explore product learning opportunities. Contact our team for session dates and joining details.",
+    "image": "learning.png",
+    "section": "Explore learning opportunities",
+    "cards": [
+      [
+        "brAInify presentations",
+        "Learn about IGNITE’s digital education product through the official global training programme.",
+        "brainify.php",
+        "Explore brAInify"
+      ],
+      [
+        "Global product training",
+        "Explore the other product presentations listed in the global programme. Product availability depends on your market.",
+        "contact.php",
+        "Ask about training"
+      ],
+      [
+        "Prepare for your session",
+        "Confirm the session date, time zone and joining details with the team before attending.",
+        "contact.php",
+        "Ask a question"
+      ]
+    ]
+  },
+  "policies": {
+    "title": "Policies & Documents",
+    "eyebrow": "CLARITY AT EVERY STEP",
+    "heading": "Know where you stand.",
+    "intro": "Browse summaries of IGNITE’s global policies. Contact our team for complete documents and terms applicable to your market.",
+    "section": "Policy topics",
+    "cards": [
+      [
+        "AI Content Disclaimer",
+        "IGNITE uses generative AI to help prepare text, visuals and marketing materials, with human review.",
+        "ai-content-disclaimer.php",
+        "Read policy overview"
+      ],
+      [
+        "Shipping Policy",
+        "Available destinations, delivery methods and charges are shown at checkout. Delivery dates are estimates; customs and courier delays may occur.",
+        "shipping-policy.php",
+        "Read policy overview"
+      ],
+      [
+        "Return, Refund, and Exchange Policy",
+        "The global policy covers qualifying physical purchases made directly from IGNITE. Digital services are excluded unless the sale terms say otherwise. Conditions and deadlines apply.",
+        "return-refund-and-exchange-policy.php",
+        "Read policy overview"
+      ],
+      [
+        "Terms and Conditions",
+        "The published general terms primarily cover direct physical-product purchases. Check the specific terms for digital services such as brAInify.",
+        "terms-and-conditions.php",
+        "Read policy overview"
+      ],
+      [
+        "Privacy Policy",
+        "IGNITE’s global policy describes contact, transaction and device data used for accounts, orders, support and security. Service providers may process information for these purposes.",
+        "privacy-policy.php",
+        "Read policy overview"
+      ],
+      [
+        "Social Media Policy",
+        "State your actual relationship with IGNITE. Personal opinions must not appear to be official company statements. Use brand assets only with permission.",
+        "social-media-policy.php",
+        "Read policy overview"
+      ]
+    ]
+  },
+  "contact": {
+    "title": "Contact IGNITE",
+    "eyebrow": "LET’S CONNECT",
+    "heading": "A conversation is a good place to start.",
+    "intro": "Use the verified global IGNITE contact channels for product questions, support and business enquiries.",
+    "section": "Global contact channels",
+    "cards": [
+      [
+        "For inquiries, please contact:",
+        "spark@joinignite.com",
+        "mailto:spark@joinignite.com",
+        "Email IGNITE"
+      ],
+      [
+        "Call the global office",
+        "+852 3678 6503 · Hong Kong",
+        "tel:+85236786503",
+        "Call IGNITE"
+      ],
+      [
+        "Find an answer",
+        "Browse our Help Centre for product, account and general questions.",
+        "help.php",
+        "Visit the Help Centre"
+      ],
+      [
+        "Registered office",
+        "IGNITE SOCIAL ENTERPRISE LIMITED · Unit C, 17/F United Centre, Suite No. 9181, 95 Queensway, Admiralty, Hong Kong",
+        null,
+        null
+      ]
+    ],
+    "faqs": [
+      [
+        "What should I include in a support request?",
+        "Describe your question and include an order or account reference if relevant. Share account information only through official support channels; never send your password."
+      ],
+      [
+        "Looking for a quick answer?",
+        "Visit our Help Centre and FAQs for product navigation and support guidance."
+      ]
+    ]
+  },
+  "help": {
+    "title": "Help Centre",
+    "eyebrow": "HERE TO HELP",
+    "heading": "Find the right next step.",
+    "intro": "Choose the topic that best matches your question.",
+    "section": "How can we help?",
+    "cards": [
+      [
+        "Learning & brAInify",
+        "Explore learning paths and the AI mentor, or ask the official team about product access.",
+        "brainify.php",
+        "Explore brAInify"
+      ],
+      [
+        "Account access",
+        "Sign in to the official IGNITE distributor portal.",
+        "https://distributor.joinignite.com/",
+        "Open distributor login"
+      ],
+      [
+        "Orders & returns",
+        "Check official policies and contact the global support team about your order.",
+        "policies.php",
+        "Review order policies"
+      ],
+      [
+        "Business enquiries",
+        "Understand the opportunity and where to ask about registration.",
+        "business.php",
+        "Explore business"
+      ],
+      [
+        "General questions",
+        "Browse answers to common website and product questions.",
+        "faqs.php",
+        "Browse FAQs"
+      ],
+      [
+        "Contact support",
+        "Reach IGNITE’s global team through the official contact channel.",
+        "contact.php",
+        "Contact IGNITE"
+      ]
+    ]
+  },
+  "leadership": {
+    "title": "IGNITE Leadership",
+    "eyebrow": "MEET THE GLOBAL COMMUNITY",
+    "heading": "Experience shared. People supported.",
+    "intro": "Meet the working upline and APEX partners listed in IGNITE’s official global leadership directory.",
+    "section": "Global leadership directory",
+    "people": [
+      [
+        "Pathman Senathirajah",
+        "Working Upline"
+      ],
+      [
+        "Adly Hassan",
+        "APEX Partner"
+      ],
+      [
+        "Arun George",
+        "APEX Partner"
+      ],
+      [
+        "Dev Johl",
+        "APEX Partner"
+      ],
+      [
+        "David Sharma",
+        "APEX Partner"
+      ],
+      [
+        "Rosli Ismail",
+        "APEX Partner"
+      ],
+      [
+        "Ibn Abbas",
+        "APEX Partner"
+      ],
+      [
+        "Sylla Youssouf",
+        "APEX Partner"
+      ],
+      [
+        "Sylla Zoumana",
+        "APEX Partner"
+      ],
+      [
+        "N’Golo",
+        "APEX Partner"
+      ],
+      [
+        "Manoj Narayanan",
+        "APEX Partner"
+      ],
+      [
+        "Marwan Talodi",
+        "APEX Partner"
+      ],
+      [
+        "Shipra",
+        "APEX Partner"
+      ]
+    ]
+  },
+  "advisory-board": {
+    "title": "Global Advisory Board",
+    "eyebrow": "PERSPECTIVE & PARTNERSHIP",
+    "heading": "Regional insight. Global connection.",
+    "intro": "IGNITE’s official FAQ identifies regional advisers and strategic partners who support stakeholder engagement and market understanding.",
+    "section": "Featured global adviser",
+    "cards": [
+      [
+        "Nathan Kwabena Adisi · Bola Ray",
+        "Global Advisory Board member and Strategic Partner for Sub-Saharan Africa. His role is advisory and strategic.",
+        null,
+        null
+      ],
+      [
+        "Ask about regional representation",
+        "For current appointments and country-specific enquiries, contact IGNITE directly.",
+        "contact.php",
+        "Contact the global team"
+      ]
+    ]
+  },
+  "media": {
+    "title": "Media Coverage",
+    "eyebrow": "IGNITE IN THE NEWS",
+    "heading": "Stories that travel further.",
+    "intro": "Explore selected brAInify launch coverage from independent publications.",
+    "section": "Selected publication features",
+    "media": [
+      [
+        "The World Agenda",
+        "world.png",
+        "https://theworldagenda.com/news/brainify-launches-as-a-next-generation-ai-powered-e-learning-ecosystem-where-learning-turns-into-real-world-building/546265"
+      ],
+      [
+        "Voyage Times",
+        "voyage.png",
+        "https://voyagetimes.com/news/brainify-launches-as-a-next-generation-ai-powered-e-learning-ecosystem-where-learning-turns-into-real-world-building/546265"
+      ],
+      [
+        "Tech Asialogue",
+        "tech-asialogue.png",
+        "https://tech.asialogue.com/news/brainify-launches-as-a-next-generation-ai-powered-e-learning-ecosystem-where-learning-turns-into-real-world-building/546265"
+      ],
+      [
+        "Financial Capital",
+        "financial.png",
+        "https://thefinancialcapital.com/news/brainify-launches-as-a-next-generation-ai-powered-e-learning-ecosystem-where-learning-turns-into-real-world-building/546265"
+      ]
+    ]
+  },
+  "faqs": {
+    "title": "Frequently Asked Questions",
+    "eyebrow": "A LITTLE MORE CLARITY",
+    "heading": "Your questions. A clear starting point.",
+    "intro": "Find quick answers and directions to official information.",
+    "section": "Explore the answers",
+    "faqs": [
+      [
+        "What is IGNITE?",
+        "IGNITE is a Hong Kong-headquartered direct-selling company with an e-commerce platform and independent Brand Affiliates."
+      ],
+      [
+        "What product can I explore here?",
+        "This website currently features brAInify. Open Products in the navigation to explore its learning paths and AI-assisted approach."
+      ],
+      [
+        "Where can I find training?",
+        "Visit Training & Events for learning topics, then contact our team for session dates and joining details."
+      ],
+      [
+        "How do I join or access my account?",
+        "Use Login in the navigation to open the official distributor portal. Contact IGNITE for registration guidance in your market."
+      ],
+      [
+        "Where are the official policies?",
+        "Browse summaries of IGNITE’s global policies. Contact our team for complete documents and terms applicable to your market."
+      ],
+      [
+        "How do I ask about an order?",
+        "Contact global support with your order reference and question. Check the official return and shipping policies for the applicable conditions."
+      ]
+    ]
+  },
+  "ai-content-disclaimer": {
+    "title": "AI Content Disclaimer",
+    "heading": "AI Content Disclaimer",
+    "eyebrow": "Policy overview",
+    "intro": "Summary of IGNITE’s global policy. This is not the full policy or a Kazakhstan-specific agreement. Contact our team for the complete terms applicable to your enquiry.",
+    "section": "Policy overview",
+    "sections": [
+      [
+        "How AI is used",
+        "IGNITE uses generative AI to help prepare text, visuals and marketing materials, with human review."
+      ],
+      [
+        "Verify important information",
+        "AI-assisted content may contain errors. Verify critical information and seek professional advice where needed. Content may be revised or removed."
+      ]
+    ]
+  },
+  "shipping-policy": {
+    "title": "Shipping Policy",
+    "heading": "Shipping Policy",
+    "eyebrow": "Policy overview",
+    "intro": "Summary of IGNITE’s global policy. This is not the full policy or a Kazakhstan-specific agreement. Contact our team for the complete terms applicable to your enquiry.",
+    "section": "Policy overview",
+    "sections": [
+      [
+        "Delivery options",
+        "Available destinations, delivery methods and charges are shown at checkout. Delivery dates are estimates; customs and courier delays may occur."
+      ],
+      [
+        "Order support",
+        "Import duties may be payable by the recipient. Report damaged or missing items promptly with your order reference and photos."
+      ]
+    ]
+  },
+  "return-refund-and-exchange-policy": {
+    "title": "Return, Refund, and Exchange Policy",
+    "heading": "Return, Refund, and Exchange Policy",
+    "eyebrow": "Policy overview",
+    "intro": "Summary of IGNITE’s global policy. This is not the full policy or a Kazakhstan-specific agreement. Contact our team for the complete terms applicable to your enquiry.",
+    "section": "Policy overview",
+    "sections": [
+      [
+        "Eligibility",
+        "The global policy covers qualifying physical purchases made directly from IGNITE. Digital services are excluded unless the sale terms say otherwise. Conditions and deadlines apply."
+      ],
+      [
+        "Before returning a product",
+        "Contact support with purchase details and evidence of any defect. Obtain written return authorisation before sending goods. Refunds depend on approval and inspection."
+      ]
+    ]
+  },
+  "terms-and-conditions": {
+    "title": "Terms and Conditions",
+    "heading": "Terms and Conditions",
+    "eyebrow": "Policy overview",
+    "intro": "Summary of IGNITE’s global policy. This is not the full policy or a Kazakhstan-specific agreement. Contact our team for the complete terms applicable to your enquiry.",
+    "section": "Policy overview",
+    "sections": [
+      [
+        "Scope of the terms",
+        "The published general terms primarily cover direct physical-product purchases. Check the specific terms for digital services such as brAInify."
+      ],
+      [
+        "Independent participation",
+        "Brand Affiliates operate independently and must follow company requirements and local law. They must not misrepresent products, earnings or their relationship with IGNITE."
+      ]
+    ]
+  },
+  "privacy-policy": {
+    "title": "Privacy Policy",
+    "heading": "Privacy Policy",
+    "eyebrow": "Policy overview",
+    "intro": "Summary of IGNITE’s global policy. This is not the full policy or a Kazakhstan-specific agreement. Contact our team for the complete terms applicable to your enquiry.",
+    "section": "Policy overview",
+    "sections": [
+      [
+        "Information and services",
+        "IGNITE’s global policy describes contact, transaction and device data used for accounts, orders, support and security. Service providers may process information for these purposes."
+      ],
+      [
+        "Your information choices",
+        "You may request access, correction or deletion of personal data and opt out of marketing. Some records must be retained for legal obligations."
+      ]
+    ]
+  },
+  "social-media-policy": {
+    "title": "Social Media Policy",
+    "heading": "Social Media Policy",
+    "eyebrow": "Policy overview",
+    "intro": "Summary of IGNITE’s global policy. This is not the full policy or a Kazakhstan-specific agreement. Contact our team for the complete terms applicable to your enquiry.",
+    "section": "Policy overview",
+    "sections": [
+      [
+        "Represent yourself clearly",
+        "State your actual relationship with IGNITE. Personal opinions must not appear to be official company statements. Use brand assets only with permission."
+      ],
+      [
+        "Share responsibly",
+        "Use accurate, approved product claims. Avoid misleading earnings promises. Respect others, protect confidential information and honour copyright."
+      ]
+    ]
+  },
+  "become-a-brand-affiliate": {
+    "title": "Become a Brand Affiliate",
+    "heading": "Become a Brand Affiliate",
+    "eyebrow": "YOUR NEXT CHAPTER",
+    "intro": "Explore the products, understand the responsibilities and ask our team about joining in your market.",
+    "image": "journey.png",
+    "section": "Start with understanding",
+    "cards": [
+      [
+        "Discover the products",
+        "Start with the product experience and the needs of the people you want to serve.",
+        "brainify.php",
+        "Explore our product"
+      ],
+      [
+        "Understand the relationship",
+        "Brand Affiliates work independently. Review the official requirements, policies and responsibilities.",
+        "policies.php",
+        "Review policies"
+      ],
+      [
+        "Ask about joining",
+        "Confirm eligibility, availability and enrolment requirements with our team before registering.",
+        "contact.php",
+        "Contact IGNITE"
+      ]
+    ],
+    "faqs": [
+      [
+        "Are earnings guaranteed?",
+        "No. IGNITE’s official FAQ rejects investment packages and guaranteed returns. Review the official business terms before making a decision."
+      ],
+      [
+        "How do I register?",
+        "Contact IGNITE through its official channels for the registration route and requirements applicable to your country."
+      ]
+    ]
+  },
+  "build-your-business": {
+    "title": "Build Your Business",
+    "heading": "Build Your Business",
+    "eyebrow": "YOUR NEXT CHAPTER",
+    "intro": "Develop product knowledge, support customers and keep learning as you build your independent business.",
+    "image": "learning.png",
+    "section": "Put learning into practice",
+    "cards": [
+      [
+        "Discover the products",
+        "Start with the product experience and the needs of the people you want to serve.",
+        "brainify.php",
+        "Explore our product"
+      ],
+      [
+        "Keep developing your skills",
+        "Explore product training and confirm upcoming sessions with the team.",
+        "events.php",
+        "Explore training"
+      ],
+      [
+        "Social Media Policy",
+        "Use accurate, approved product claims. Avoid misleading earnings promises. Respect others, protect confidential information and honour copyright.",
+        "social-media-policy.php",
+        "Review policies"
+      ]
+    ],
+    "faqs": [
+      [
+        "Are earnings guaranteed?",
+        "No. IGNITE’s official FAQ rejects investment packages and guaranteed returns. Review the official business terms before making a decision."
+      ]
+    ]
+  }
+}

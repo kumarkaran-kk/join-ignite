@@ -1,0 +1,34 @@
+/* Cyrillic-capable system fonts and room for longer translated labels. */
+@media(min-width:1101px){
+ html:not([lang=en]) body .navigation{gap:clamp(10px,1vw,20px)}
+ html:not([lang=en]) body .navigation .login{width:auto;max-width:250px;white-space:normal;text-align:center;font-size:clamp(11px,1vw,16px);line-height:1.3;padding:8px 14px;height:auto;min-height:42px}
+ html:not([lang=en]) body .navigation nav{min-width:0;gap:clamp(10px,1.2vw,22px)}
+ html:not([lang=en]) body .navigation nav a{white-space:normal}
+}
+@media(max-width:1100px){html:not([lang=en]) body .navigation .mobile-menu-actions .login{white-space:normal;height:auto;min-height:50px;padding:12px 16px;line-height:1.4;text-align:center}}
+html:not([lang=en]) body,html:not([lang=en]) h1,html:not([lang=en]) h2,html:not([lang=en]) h3,html:not([lang=en]) button,html:not([lang=en]) .pill,html:not([lang=en]) .navigation,html:not([lang=en]) .brainify-button,html:not([lang=en]) .page-card h3{font-family:Arial,"Segoe UI",sans-serif}
+html:not([lang=en]) .navigation{gap:calc(20 * var(--unit));font-size:calc(18 * var(--unit))}
+html:not([lang=en]) .navigation nav{gap:calc(22 * var(--unit))}
+html:not([lang=en]) .brand{margin-right:calc(20 * var(--unit))}
+html:not([lang=en]) .hero-copy h1{font-size:calc(67 * var(--unit));white-space:normal;font-weight:700;line-height:1.12}
+html:not([lang=en]) .hero-copy p{font-size:calc(25 * var(--unit));line-height:1.4}
+html:not([lang=en]) .learning h2{font-size:calc(52 * var(--unit))}
+html:not([lang=en]) .learning p{line-height:1.45}
+html:not([lang=en]) .learning-image>.pill{width:auto;min-width:30%;left:32%;padding:0 20px;font-size:calc(20 * var(--unit))}
+html:not([lang=en]) .about p{width:56%;line-height:1.45}
+html:not([lang=en]) .about>.pill{margin-top:calc(55 * var(--unit))}
+html:not([lang=en]) .journey h2{font-size:calc(60 * var(--unit))}
+html:not([lang=en]) .business-copy .pill{width:auto;max-width:95%;font-size:calc(21 * var(--unit))}
+html:not([lang=en]) .footer-main h3,html:not([lang=en]) .footer-main nav a{font-size:calc(25 * var(--unit));line-height:1.6;margin-bottom:12px}
+html:not([lang=en]) .footer-main{gap:20px;grid-template-columns:18% 15% 22% 17% 24%;padding-left:7%;padding-right:7%}
+html:not([lang=en]) .copyright{font-size:calc(17 * var(--unit))}
+#language-dialog h2{font-size:26px;padding-right:20px}
+html:not([lang=en]) .coverage-label{padding:0 20px;min-width:0;height:auto;min-height:40px;line-height:1.3}
+html:not([lang=en]) .hero-copy h1{overflow-wrap:anywhere}
+
+#language-dialog nav{display:grid;gap:10px;margin-top:24px}
+#language-dialog nav a{padding:14px 18px;border:1px solid #ffffff50;border-radius:10px;font:18px Arial,sans-serif}
+#language-dialog nav a:hover,#language-dialog nav a[aria-current]{background:#ffc72c;color:#00163d;border-color:#ffc72c}
+@media(max-width:1000px) and (min-width:701px){html:not([lang=en]) .navigation{font-size:12px;gap:10px;margin:0 3%}html:not([lang=en]) .navigation nav{gap:12px}html:not([lang=en]) .navigation nav a{white-space:normal}html:not([lang=en]) .login{width:auto;padding:0 12px}html:not([lang=en]) .brand{margin-right:0}}
+@media(max-width:700px){.navigation .language{display:inline-flex;width:auto;height:38px;padding:0 10px;font-size:12px;gap:5px}.navigation .language>img:first-child,.navigation .language .motion-icon-globe{display:none}.navigation{gap:10px;margin:0 16px}.navigation .brand{margin-right:auto}.navigation .menu-toggle{padding:10px 12px}.navigation .brand img{width:54px;height:54px}html:not([lang=en]) .navigation{font-size:14px;gap:10px}html:not([lang=en]) .navigation nav a{font-size:14px}html:not([lang=en]) .hero-copy h1{font-size:36px}html:not([lang=en]) .hero-copy p{font-size:16px}html:not([lang=en]) .hero-link{margin-top:32px}html:not([lang=en]) .learning h2{font-size:34px}html:not([lang=en]) .learning-image>.pill{font-size:14px;left:25%;height:42px}html:not([lang=en]) .about p{width:100%}html:not([lang=en]) .about>.pill{margin-top:30px}html:not([lang=en]) .journey h2{font-size:clamp(21px,6vw,36px)}html:not([lang=en]) .business-copy .pill{font-size:14px;white-space:normal;text-align:center}html:not([lang=en]) .footer-main{grid-template-columns:1fr 1fr;gap:22px;padding:42px 24px 210px}html:not([lang=en]) .footer-main h3,html:not([lang=en]) .footer-main nav a{font-size:14px}html:not([lang=en]) .copyright{font-size:11px}html:not([lang=en]) .brainify-actions{gap:22px}html:not([lang=en]) .brainify-button{white-space:normal;line-height:1.4}}
+@media(max-width:700px){html:not([lang=en]) .learning-image>.pill{left:50%;transform:translate(-50%,-50%)}html:not([lang=en]) .hero-copy h1{font-size:clamp(29px,8.5vw,36px)}html:not([lang=en]) .hero{min-height:760px}}

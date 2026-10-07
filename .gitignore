@@ -1,0 +1,38 @@
+## Dependencies and generated output
+**/node_modules/
+/_project/tests/screenshots/
+/_project/*.zip
+coverage/
+playwright-report/
+test-results/
+*.log
+*.pid
+/_project
+
+## Local configuration and secrets
+.env
+.env.*
+!.env.example
+.user.ini
+.codex/
+.agents/
+.aws/
+.idea/
+.vscode/
+*.pem
+*.key
+
+## Client originals and reference-only working files
+/_project/source-documents/
+/_project/source-images/
+/_project/archive/
+~$*.xlsx
+*.bak
+*.tmp
+*.swp
+*~
+
+## OS metadata
+.DS_Store
+Thumbs.db
+Desktop.ini

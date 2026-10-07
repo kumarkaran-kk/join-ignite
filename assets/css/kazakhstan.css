@@ -1,0 +1,14 @@
+/* Local imagery uses the existing layout; the ornament is original decorative artwork. */
+html body .hero .kazakhstan-slide img{inset:0;width:100%;height:100%;object-fit:cover;object-position:center;transform:none;filter:saturate(.55)}
+.kazakhstan-slide:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,16,43,.83),rgba(0,22,61,.5) 52%,rgba(0,22,61,.15));pointer-events:none}
+html body .hero .kazakhstan-slide:nth-child(2) img{object-position:center 48%;filter:saturate(.6)}
+html body #support{position:relative}
+html body #support:before{content:"";position:absolute;inset:0 0 auto;height:40px;background:url('../images/kazakhstan/ornament.svg') repeat-x center;opacity:.2;pointer-events:none}
+.page-hero:before,.brainify-hero:before{content:"";position:absolute;inset:auto 0 0;height:40px;background:url('../images/kazakhstan/ornament.svg') repeat-x center;opacity:.32;pointer-events:none;z-index:1}
+.learning-copy:before{content:"";display:block;width:120px;height:40px;margin-bottom:16px;background:url('../images/kazakhstan/ornament.svg') no-repeat center}
+@media(max-width:1100px){html body .mobile-menu-actions:not(:has(.search-toggle)) .language{grid-column:1/-1}}
+@media(max-width:700px){
+ html body .hero .kazakhstan-slide img{object-position:58% center}
+ .kazakhstan-slide:after{background:linear-gradient(90deg,rgba(0,16,43,.86),rgba(0,22,61,.5))}
+ .learning-copy:before{margin-bottom:12px}
+}

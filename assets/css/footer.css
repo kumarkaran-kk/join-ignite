@@ -1,0 +1,53 @@
+/* Shared footer sizing is independent of the exported Figma viewport scale. */
+html body footer#support{
+    height:auto;min-height:0;margin-top:0;padding:52px clamp(24px,6vw,100px) 24px;
+    background:#00163d;color:#fff;overflow:hidden;border-top:1px solid #ffffff12;
+    font-family:Inter,Arial,sans-serif;
+}
+html body #support .footer-main{
+    display:grid;grid-template-columns:1.15fr .9fr 1.1fr 1.15fr 1.35fr;
+    grid-template-areas:"brand short about business policies";
+    max-width:1280px;margin:0 auto;padding:0 0 34px;gap:32px;align-items:start;
+}
+html body #support .footer-brand{grid-area:brand;display:flex;flex-direction:column;align-items:flex-start;gap:20px;padding:0;min-width:0}
+html body #support .footer-logo{width:64px;height:64px;margin:0;object-fit:contain}
+html body #support .socials{display:flex;align-items:center;gap:8px;margin:0}
+html body #support .socials a{display:grid;place-items:center;width:36px;height:36px;border:1px solid #ffffff26;border-radius:50%;background:#ffffff05;transition:background .2s,border-color .2s}
+html body #support .socials a:hover{background:#ffffff15;border-color:#ffc72c}
+html body #support .socials img{width:16px;height:16px;object-fit:contain}
+#support .footer-short-links{grid-area:short;display:grid;gap:24px;min-width:0}
+#support .footer-about{grid-area:about}
+#support .footer-business{grid-area:business}
+#support .footer-policies{grid-area:policies}
+html body #support .footer-main nav{min-width:0}
+html body #support .footer-main h3{margin:0 0 14px;padding:0;font-family:inherit;font-size:15px;font-weight:700;line-height:1.4;color:#fff;overflow-wrap:anywhere}
+html body #support .footer-main nav a{display:block;min-height:0;margin:0;padding:6px 0;font-size:14px;font-weight:400;line-height:1.55;letter-spacing:0;white-space:normal;overflow-wrap:anywhere;color:#bbc9df;transition:color .2s}
+html body #support .footer-main nav a:hover{color:#ffc72c}
+html body #support .footer-main h3 a{font:inherit;color:inherit;padding:0;min-height:0}
+html body #support a:focus-visible{outline:2px solid #ffc72c;outline-offset:4px;border-radius:3px}
+html body #support .copyright{position:relative;inset:auto;width:auto;max-width:1280px;margin:0 auto;padding:22px 0 0;border-top:1px solid #ffffff20;text-align:left;font:400 11px/1.75 Inter,Arial,sans-serif;letter-spacing:0;color:#94a8c6;overflow-wrap:anywhere}
+html body #support .footer-motion{opacity:.14}
+html body #support .footer-motion>img{object-fit:cover}
+@media(max-width:1199px){
+    html body footer#support{padding:36px 28px 24px}
+    html body #support .footer-main{grid-template-columns:repeat(3,minmax(0,1fr));grid-template-areas:"brand short about" "brand business policies";gap:28px 24px}
+    html body #support .footer-logo{width:68px;height:68px}
+    html body #support .socials a{width:44px;height:44px}
+    html body #support .footer-main nav a{display:flex;align-items:center;min-height:44px;padding:8px 0}
+}
+@media(max-width:600px){
+    html body footer#support{padding:28px 24px 24px}
+    html body #support .footer-main{grid-template-columns:minmax(0,1fr) minmax(0,1fr);grid-template-areas:"brand brand" "short about" "business policies";gap:28px 24px;padding-bottom:24px}
+    html body #support .footer-brand{padding-bottom:24px;border-bottom:1px solid #ffffff20;gap:16px}
+    html body #support .footer-logo{width:64px;height:64px}
+    html body #support .footer-main h3{font-size:14px;margin-bottom:6px}
+    html body #support .footer-main nav a{font-size:13px;line-height:1.5}
+    html body #support .copyright{padding-top:18px;font:400 10.5px/1.75 Arial,sans-serif}
+}
+@media(max-width:360px){html body footer#support{padding-left:20px;padding-right:20px}html body #support .footer-main{column-gap:18px}html body #support .socials{gap:6px}}
+html body #support .footer-main h3 a{display:block;min-height:0;padding:0;font:inherit}
+@media(prefers-reduced-motion:reduce){html body #support .socials a,html body #support .footer-main nav a{transition:none}}
+html body #support .footer-inquiry{position:relative;max-width:100%;margin:0;padding:0;font:400 13px/1.7 Inter,Arial,sans-serif;color:#bbc9df;overflow-wrap:anywhere}
+html body #support .footer-inquiry span{display:block}
+html body #support .footer-inquiry a{display:inline-block;color:#fff;text-decoration:underline;text-underline-offset:4px;padding:8px 0}
+html body #support .footer-inquiry a:hover{color:#ffc72c}

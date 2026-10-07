@@ -1,0 +1,28 @@
+@font-face{font-family:Poppins;src:url('../fonts/poppins-bold.ttf') format('truetype');font-style:normal;font-weight:700;font-display:swap}
+.coverage{--coverage-scale:min(1px,100vw / 1918);--coverage-gap:calc(49 * var(--coverage-scale));--visible:5;background:#fff;text-align:center;padding:calc(83 * var(--coverage-scale)) 0 calc(70 * var(--coverage-scale));color:#333;font-family:Poppins,sans-serif}
+.coverage-label{display:inline-flex;align-items:center;justify-content:center;background:#ffc72c;color:white;border-radius:99px;min-width:calc(243 * var(--coverage-scale));height:calc(40 * var(--coverage-scale));font-size:calc(22 * var(--coverage-scale));font-weight:700}
+.coverage h2{font-family:Poppins,sans-serif;font-size:calc(70 * var(--coverage-scale));font-weight:700;line-height:1.2;color:#1d4699;margin:calc(28 * var(--coverage-scale)) 0 calc(15 * var(--coverage-scale));letter-spacing:0}
+.coverage-description{font-size:calc(28 * var(--coverage-scale));line-height:1.48;max-width:calc(1100 * var(--coverage-scale));margin:0 auto}
+.coverage-slider{position:relative;margin:calc(71 * var(--coverage-scale)) auto 0;width:92%}
+.coverage-window{width:85.8%;margin:auto;overflow:hidden;padding:8px 5px}
+.coverage-track{display:flex;gap:var(--coverage-gap);transition:transform 550ms cubic-bezier(.22,.61,.36,1);will-change:transform}
+.coverage-card{flex:0 0 calc((100% - (var(--visible) - 1) * var(--coverage-gap)) / var(--visible));aspect-ratio:1;background:#f4f7fc;border-radius:calc(19 * var(--coverage-scale));box-shadow:0 0 7px #00000020;display:flex;align-items:center;justify-content:center;padding:0}
+.coverage-card img{width:100%;height:42%;object-fit:contain;mix-blend-mode:multiply}
+.coverage-card img[src*="voyage"]{width:69%}
+.coverage-card img[src*="tech-asialogue"]{width:98%}
+.coverage-card img[src*="africa"]{width:98%;height:48%}
+.coverage-arrow{position:absolute;top:50%;transform:translateY(-50%);display:grid;place-items:center;width:calc(61 * var(--coverage-scale));height:calc(61 * var(--coverage-scale));border:0;border-radius:50%;background:#f4f7fc;cursor:pointer;color:#454545}
+.coverage-arrow svg{width:calc(23 * var(--coverage-scale));height:calc(23 * var(--coverage-scale));fill:currentColor}
+.coverage-prev{left:0}.coverage-next{right:0}
+.coverage-arrow:hover{background:#e7eef9;color:#1d4699}
+.coverage-cta{display:inline-flex;align-items:center;justify-content:center;margin-top:calc(56 * var(--coverage-scale));min-height:calc(59 * var(--coverage-scale));padding:0 calc(33 * var(--coverage-scale));border-radius:99px;background:#1d4699;color:white;font-size:calc(20 * var(--coverage-scale));text-decoration:none;transition:background .2s}
+.coverage-cta:hover{background:#123675}
+.coverage-dots{display:flex;justify-content:center;gap:0;margin-top:calc(31 * var(--coverage-scale))}
+.coverage-dots button{display:grid;place-items:center;width:calc(23 * var(--coverage-scale));height:calc(30 * var(--coverage-scale));background:transparent;border:0;padding:0;cursor:pointer}
+.coverage-dots button:before{content:"";width:calc(16 * var(--coverage-scale));height:calc(16 * var(--coverage-scale));border-radius:50%;background:#ffc72c}
+.coverage-dots button[aria-pressed=true]:before{background:#0062a3}
+.coverage :focus-visible{outline:3px solid #0062a3;outline-offset:4px}
+@media(max-width:1000px){.coverage{--coverage-scale:1px;--coverage-gap:24px;--visible:3;padding:60px 0}.coverage-label{font-size:16px;min-width:185px;height:34px}.coverage h2{font-size:48px;margin:22px 0 16px}.coverage-description{font-size:20px;width:86%;max-width:720px}.coverage-slider{margin-top:40px;width:94%}.coverage-window{width:82%}.coverage-arrow{width:40px;height:40px}.coverage-arrow svg{width:18px;height:18px}.coverage-cta{margin-top:35px;font-size:17px;min-height:52px}.coverage-dots{margin-top:22px}.coverage-dots button{width:28px;height:36px}}
+@media(max-width:600px){.coverage{--visible:1;padding:48px 0}.coverage h2{font-size:40px}.coverage-description{font-size:17px;line-height:1.6;width:88%}.coverage-slider{margin-top:28px;max-width:420px}.coverage-window{width:70%}.coverage-card{border-radius:19px}.coverage-cta{font-size:16px;padding:0 25px}.coverage-dots button:before{width:12px;height:12px}}
+@media(prefers-reduced-motion:reduce){.coverage-track,.coverage-cta{transition:none}}
+

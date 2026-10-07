@@ -1,0 +1,25 @@
+/* Decorative product motion; content stays readable without JavaScript. */
+.brainify-hero{isolation:isolate}
+.brainify-hero-copy,.brainify-hero-visual,.brainify-facts{position:relative;z-index:1}
+.brainify-neural-field{position:absolute;right:-3%;top:-15%;width:70%;height:120%;pointer-events:none;opacity:.4;z-index:0;overflow:visible}
+.neural-link{fill:none;stroke:#5d8bcc;stroke-width:1;opacity:.3}
+.neural-packet{fill:none;stroke:#ffc72c;stroke-width:2;stroke-dasharray:9 110;opacity:0}
+.brainify-neural-field circle,.brainify-mentor-network circle{fill:#79a6e6;opacity:.55}
+.brainify-mentor-network{position:absolute;inset:-8%;width:116%;height:116%;pointer-events:none;opacity:.8}
+.brainify-mentor-core,.brainify-orbit-label{z-index:1}
+.brainify-level-grid article{position:relative;overflow:hidden}
+.brainify-level-grid article>.brainify-level-trace{position:absolute;top:0;left:0;width:100%;height:3px;border-radius:0;margin:0;background:linear-gradient(90deg,#184598,#ffc72c);transform-origin:left;pointer-events:none}
+.brainify-path{transition:box-shadow .3s,border-color .3s,translate .3s}
+.brainify-path:hover,.brainify-path:focus-within{translate:0 -5px;box-shadow:0 16px 35px #00163d14;border-color:#91abd0}
+.brainify-button{position:relative;overflow:hidden;isolation:isolate}
+.brainify-button:before{content:"";position:absolute;inset:-60% auto -60% -60%;width:35%;background:linear-gradient(90deg,transparent,#ffffff70,transparent);transform:skewX(-25deg);transition:left .7s;pointer-events:none}
+.brainify-button:hover:before,.brainify-button:focus-visible:before{left:130%}
+.brainify-button span{transition:transform .3s}.brainify-button:hover span{transform:rotate(45deg)}
+.brainify-audience-list span{transition:background .3s,color .3s,transform .3s}.brainify-audience-list span:hover{background:#184598;color:white;transform:translateY(-4px)}
+.brainify-join{position:relative;overflow:hidden;isolation:isolate}
+.brainify-join:before,.brainify-join:after{content:"";position:absolute;width:380px;height:380px;border:1px solid #18459815;border-radius:50%;z-index:-1;top:5%;left:-150px}
+.brainify-join:after{left:auto;right:-150px;top:30%;width:480px;height:480px}
+.brainify-offscreen .brainify-orbit,.brainify-page.motion-paused .brainify-orbit{animation-play-state:paused}
+.brainify-page .motion-toggle{position:fixed;right:18px;bottom:18px;left:auto;top:auto;transform:none;width:auto;height:auto;clip-path:none;opacity:.92;z-index:20;border:1px solid #ffffff50;border-radius:40px;padding:10px 16px;background:#00163d;color:#fff;font:12px Inter,Arial,sans-serif;box-shadow:0 3px 15px #0002}
+@media(max-width:700px){.brainify-neural-field{width:130%;right:-35%;opacity:.25}.brainify-page .motion-toggle{right:12px;bottom:12px;font-size:11px;padding:9px 12px}.brainify-mentor-network{inset:0;width:100%;height:100%}}
+@media(prefers-reduced-motion:reduce){.brainify-path,.brainify-button:before,.brainify-button span,.brainify-audience-list span{transition:none}.brainify-path:hover,.brainify-path:focus-within,.brainify-audience-list span:hover{translate:none;transform:none}.brainify-neural-field,.brainify-mentor-network{opacity:.3}}

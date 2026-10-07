@@ -1,0 +1,32 @@
+/* One compact top row; secondary actions live inside the mobile menu. */
+.menu-icon{display:none}
+@media(max-width:1100px){
+    body.mobile-menu-open{overflow:hidden}
+    html body .navigation{height:80px;margin:0;padding:0 20px;gap:16px;position:relative;z-index:50;background:#00163df5;border-bottom:1px solid #ffffff20;font-size:14px}
+    html body .navigation .brand{margin:0 auto 0 0;flex:none}
+    html body .navigation .brand img{width:52px;height:52px}
+    html body .navigation .menu-toggle{display:flex;align-items:center;justify-content:center;gap:12px;height:44px;min-width:96px;padding:0 15px;border:1px solid #ffffff40;border-radius:12px;background:#ffffff0d;color:white;font:500 14px Arial,sans-serif;flex:none}
+    .menu-icon{display:flex;flex-direction:column;justify-content:center;gap:5px;width:20px;height:20px}
+    .menu-icon i{display:block;width:20px;height:2px;background:currentColor;border-radius:2px;transition:transform .2s,opacity .2s}
+    .menu-toggle[aria-expanded=true] .menu-icon i:nth-child(1){transform:translateY(7px) rotate(45deg)}
+    .menu-toggle[aria-expanded=true] .menu-icon i:nth-child(2){opacity:0}
+    .menu-toggle[aria-expanded=true] .menu-icon i:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+    html body .navigation #main-navigation{display:none;position:fixed;top:80px;bottom:0;left:0;right:0;width:100%;height:calc(100dvh - 80px);padding:20px 24px max(28px,env(safe-area-inset-bottom));background:#00163d;z-index:100;overflow-y:auto;overscroll-behavior:contain;flex:none;gap:0;align-items:stretch;justify-content:flex-start}
+    html body .navigation #main-navigation.open{display:flex;flex-direction:column}
+    html body .navigation #main-navigation>a{display:flex;align-items:center;justify-content:space-between;flex:none;min-height:62px;padding:17px 0;border-bottom:1px solid #ffffff20;color:#fff;font:500 16px/1.5 Arial,sans-serif;white-space:normal;gap:18px}
+    html body .navigation #main-navigation>a[aria-current=page]{color:#ffc72c}
+    #main-navigation>a .chevron{width:10px;height:10px;flex:none;opacity:.6}
+    .mobile-menu-actions{display:grid;grid-template-columns:48px 1fr;gap:14px;margin-top:28px;padding-top:8px}
+    html body .navigation .mobile-menu-actions .search-toggle{display:grid;place-items:center;grid-column:1;grid-row:1;width:48px;height:48px;margin:0;border:1px solid #ffffff40;border-radius:12px}
+    html body .navigation .mobile-menu-actions .search-toggle img{width:20px;height:20px}
+    html body .navigation .mobile-menu-actions .language{display:flex;grid-column:2;grid-row:1;width:100%;height:48px;padding:0 16px;font:500 15px Arial,sans-serif;gap:12px;border:1px solid #ffffff40;border-radius:12px;background:#ffffff0d}
+    html body .navigation .mobile-menu-actions .language>img:first-child,html body .navigation .mobile-menu-actions .language .motion-icon-globe{display:inline-block;width:21px;height:21px}
+    html body .navigation .mobile-menu-actions .language .chevron,html body .navigation .mobile-menu-actions .language .motion-icon-chevron{width:10px;height:8px}
+    html body .navigation .mobile-menu-actions .login{display:flex;grid-column:1/-1;grid-row:2;width:100%;height:50px;padding:0 20px;border-radius:12px;background:#ffc72c;color:#00163d;font:600 16px Arial,sans-serif;gap:12px}
+    .mobile-menu-actions .login>img,.mobile-menu-actions .login .motion-icon{width:22px;height:22px}
+    .mobile-menu-actions .login img{filter:brightness(0)}
+    html body .navigation>.search-toggle,html body .navigation>.language,html body .navigation>.login{display:none}
+    body.mobile-menu-open>.motion-toggle{visibility:hidden}
+}
+@media(max-width:360px){html body .navigation{padding:0 16px}html body .navigation #main-navigation{padding-left:20px;padding-right:20px}html body .navigation #main-navigation>a{font-size:15px}}
+@media(prefers-reduced-motion:reduce){.menu-icon i{transition:none}}
