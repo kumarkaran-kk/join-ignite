@@ -1,4 +1,15 @@
 <?php
+$workbookFile = __DIR__ . '/data/workbook-pages.json';
+if (is_file($workbookFile)) {
+    $workbook = json_decode(file_get_contents($workbookFile), true, 512, JSON_THROW_ON_ERROR);
+    preg_match('~^/(?:[^?]*/)?(kk|ru|en)/~', parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH), $languageMatch);
+    $copyLanguage = $languageMatch[1] ?? 'kk';
+    if (isset($workbook['brainify'][$copyLanguage])) {
+        $copy = $workbook['brainify'][$copyLanguage];
+        require __DIR__ . '/includes/workbook-brainify.php';
+        return;
+    }
+}
 $pageId = 'brainify';
 $pageTitle = 'brAInify | AI-Assisted Learning | IGNITE Kazakhstan';
 $pageDescription = 'Explore brAInify from IGNITE: six digital learning pathways, three progressive levels and personalised AI guidance.';

@@ -1,4 +1,15 @@
 <?php
+$workbookFile = __DIR__ . '/../data/workbook-pages.json';
+if (is_file($workbookFile)) {
+    $workbook = json_decode(file_get_contents($workbookFile), true, 512, JSON_THROW_ON_ERROR);
+    preg_match('~^/(?:[^?]*/)?(kk|ru|en)/~', parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH), $languageMatch);
+    $copyLanguage = $languageMatch[1] ?? 'kk';
+    if (isset($workbook['pages'][$pageId][$copyLanguage])) {
+        $copy = $workbook['pages'][$pageId][$copyLanguage];
+        require __DIR__ . '/workbook-page.php';
+        return;
+    }
+}
 $catalog = json_decode(file_get_contents(__DIR__ . '/../data/pages.json'), true, 512, JSON_THROW_ON_ERROR);
 if (!isset($catalog[$pageId])) {
     http_response_code(404);

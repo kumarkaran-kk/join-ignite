@@ -1,0 +1,60 @@
+/* Extended workbook wording uses the site's existing typography and components. */
+.workbook-page .page-hero-copy{max-width:1000px}
+.workbook-page .page-hero h1{font-size:clamp(36px,4.5vw,72px);max-width:100%;overflow-wrap:anywhere}
+.workbook-page .page-intro{max-width:780px}
+.workbook-page .brainify-button{max-width:100%;height:auto;white-space:normal;overflow-wrap:anywhere;line-height:1.5;gap:18px}
+.workbook-page .brainify-button>span{flex:none}
+.workbook-page .page-content{padding-top:65px}
+.workbook-opening{max-width:980px;margin:0 auto 56px}
+.workbook-section+.workbook-section{margin-top:60px}
+.workbook-section>h2{font:600 clamp(28px,3vw,46px)/1.2 Geom,Arial,sans-serif;color:#184598;max-width:1000px;overflow-wrap:anywhere;margin-bottom:28px}
+.workbook-section .page-grid{margin-top:0}
+.workbook-section .page-card h3{line-height:1.35}
+.workbook-prose{max-width:980px;margin-left:auto;margin-right:auto;overflow-wrap:anywhere}
+.workbook-prose h3{font:600 clamp(24px,2.2vw,34px)/1.3 Geom,Arial,sans-serif;color:#00163d;margin-bottom:20px}
+.workbook-prose p,.workbook-prose li{font:400 16px/1.85 Arial,sans-serif;color:#526179}
+.workbook-prose p+p{margin-top:18px}
+.workbook-prose ul{margin:18px 0;padding-left:24px}
+.workbook-prose li+li{margin-top:10px}
+.workbook-prose .brainify-button{margin-top:26px}
+.workbook-prose>.workbook-prose+.workbook-prose{border-top:1px solid #dce4ef;padding-top:35px;margin-top:35px}
+.workbook-cards .page-card p+p{margin-top:0}
+.workbook-cards .page-card a{overflow-wrap:anywhere}
+.workbook-disclosure{background:#fff;border:1px solid #dce4ef;border-radius:16px;scroll-margin-top:24px}
+.workbook-disclosure+.workbook-disclosure{margin-top:14px}
+.workbook-disclosure summary{display:flex;align-items:center;justify-content:space-between;gap:22px;padding:26px 30px;list-style:none;cursor:pointer}
+.workbook-disclosure summary::-webkit-details-marker{display:none}
+.workbook-disclosure summary h3{font:600 clamp(18px,1.9vw,26px)/1.4 Geom,Arial,sans-serif;color:#00163d;overflow-wrap:anywhere}
+.workbook-disclosure summary>span{flex:none;color:#184598;font-size:26px}
+.workbook-disclosure[open] summary>span{transform:rotate(45deg)}
+.workbook-disclosure[open]{border-color:#b5c8e6}
+.workbook-disclosure>.workbook-prose{max-width:none;padding:0 30px 30px}
+.workbook-note .workbook-items{border-left:3px solid #ffc72c;background:#fff;padding:24px 30px;border-radius:0 12px 12px 0}
+.workbook-page .page-card p{white-space:normal}
+.workbook-page .brainify-hero h1{font-size:clamp(36px,4vw,64px);line-height:1.15;overflow-wrap:anywhere}
+.workbook-page .brainify-section.workbook-prose{max-width:none}
+.workbook-page .workbook-product-story{max-width:980px;margin:auto}
+.workbook-page .brainify-section.workbook-prose>p,.workbook-page .brainify-section.workbook-prose>.workbook-section{max-width:980px;margin-left:auto;margin-right:auto}
+.workbook-page .workbook-path-intro{margin-bottom:40px}
+.workbook-page .brainify-path h3{font-size:clamp(22px,1.65vw,28px);overflow-wrap:anywhere;max-width:calc(100% - 16px)}
+.workbook-page .brainify-path summary{padding-bottom:55px}
+.workbook-page .brainify-path[open] .workbook-prose p{color:#fff}
+.workbook-page .brainify-level-grid p+p{margin-top:14px}
+.workbook-page .brainify-level-grid .workbook-level-label{font-size:12px;letter-spacing:.06em;margin-bottom:10px;color:#66768e}
+.workbook-page .brainify-level-grid dl{margin:22px 0 0}
+.workbook-page .brainify-level-grid dt{font:600 12px/1.5 Arial,sans-serif;color:#184598;margin:18px 0 6px}
+.workbook-page .brainify-level-grid dd{font:400 16px/1.75 Arial,sans-serif;color:#526179;margin:0;overflow-wrap:anywhere}
+.workbook-comparison{background:#f3f6fb}
+.workbook-comparison-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:40px}
+.workbook-comparison-grid article{background:#fff;border:1px solid #dce4ef;border-radius:18px;padding:30px}
+.workbook-comparison-grid article:last-child{border-top:3px solid #ffc72c}
+.workbook-comparison-grid h3{font-size:26px;color:#00163d;margin-bottom:22px}
+.workbook-comparison-grid ul{padding-left:22px;color:#526179;font:16px/1.85 Arial,sans-serif}
+.workbook-comparison-grid li+li{margin-top:14px}
+.workbook-page .brainify-mentor .workbook-prose p{color:#d5deec}
+.workbook-page .brainify-mentor .workbook-prose .brainify-eyebrow{color:#ffc72c}
+.workbook-page .workbook-audience{display:grid;grid-template-columns:1fr 1fr;margin-top:30px}
+.workbook-page .workbook-audience span{border-radius:16px;font:15px/1.8 Arial,sans-serif;text-align:left}
+.workbook-page .brainify-join .workbook-prose{text-align:left;margin-top:26px;margin-bottom:30px}
+@media(max-width:700px){.workbook-comparison-grid,.workbook-page .workbook-audience{grid-template-columns:1fr}.workbook-comparison-grid article{padding:24px}}
+@media(max-width:700px){.workbook-page .page-content{padding-top:45px}.workbook-section+.workbook-section{margin-top:40px}.workbook-disclosure summary{padding:22px;gap:16px}.workbook-disclosure>.workbook-prose{padding:0 22px 24px}.workbook-prose p,.workbook-prose li{font-size:15px}.workbook-note .workbook-items{padding:20px}.workbook-opening{margin-bottom:40px}}
