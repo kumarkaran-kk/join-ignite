@@ -2,11 +2,27 @@ const menu = document.querySelector('.menu-toggle');
 const navigation = document.querySelector('#main-navigation');
 const compactHeader = matchMedia('(max-width: 1100px)');
 const navGroups = [...navigation.querySelectorAll('.nav-group')];
+function markCurrentMenuSection() {
+    navigation.querySelectorAll('.nav-submenu a').forEach(link => {
+        const target=new URL(link.href);
+        if(target.pathname===location.pathname && target.hash && target.hash===location.hash)link.setAttribute('aria-current','location');
+        else link.removeAttribute('aria-current');
+    });
+}
+window.addEventListener('hashchange',markCurrentMenuSection);
+markCurrentMenuSection();
+function closeNavGroup(group) {
+    group.querySelector('.nav-group-toggle').setAttribute('aria-expanded','false');
+    group.querySelector('.nav-submenu').hidden=true;
+    group.querySelectorAll('.nav-branch-toggle').forEach(toggle=>{
+        toggle.setAttribute('aria-expanded','false');
+        document.getElementById(toggle.getAttribute('aria-controls')).hidden=true;
+    });
+}
 function closeSubmenus(except = null) {
     navGroups.forEach(group => {
         if(group === except) return;
-        group.querySelector('.nav-group-toggle').setAttribute('aria-expanded', 'false');
-        group.querySelector('.nav-submenu').hidden = true;
+        closeNavGroup(group);
     });
 }
 function openSubmenu(group) {
@@ -16,8 +32,7 @@ function openSubmenu(group) {
 }
 navGroups.forEach(group => {
     const toggle = group.querySelector('.nav-group-toggle');
-    toggle.addEventListener('click', event => {
-        if(!compactHeader.matches && event.detail > 0) {openSubmenu(group);return;}
+    toggle.addEventListener('click', () => {
         if(toggle.getAttribute('aria-expanded') === 'true') closeSubmenus();
         else openSubmenu(group);
     });
@@ -26,22 +41,41 @@ navGroups.forEach(group => {
     });
     group.addEventListener('pointerleave', () => {
         if(!compactHeader.matches && !group.contains(document.activeElement)) {
-            toggle.setAttribute('aria-expanded', 'false');
-            group.querySelector('.nav-submenu').hidden = true;
+            closeNavGroup(group);
         }
     });
     group.addEventListener('focusout', () => {
         requestAnimationFrame(() => {if(!group.contains(document.activeElement)) {
-            toggle.setAttribute('aria-expanded', 'false');
-            group.querySelector('.nav-submenu').hidden = true;
+            closeNavGroup(group);
         }});
     });
     group.addEventListener('keydown', event => {
         if(event.key === 'Escape' && toggle.getAttribute('aria-expanded') === 'true') {
             event.preventDefault();event.stopPropagation();closeSubmenus();toggle.focus();
         }
-        if(event.key === 'ArrowDown' && event.target === toggle) {
+        if(event.key === 'ArrowDown' && (event.target === toggle || event.target.matches('.nav-parent'))) {
             event.preventDefault();openSubmenu(group);group.querySelector('.nav-submenu a').focus();
+        }
+    });
+});
+navigation.querySelectorAll('.nav-entry').forEach(entry=>{
+    const toggle=entry.querySelector('.nav-branch-toggle'),panel=entry.querySelector('.nav-nested');
+    function closeBranch(){toggle.setAttribute('aria-expanded','false');panel.hidden=true;}
+    function openBranch(){
+        entry.parentElement.querySelectorAll('.nav-entry').forEach(sibling=>{
+            if(sibling===entry)return;
+            sibling.querySelector('.nav-branch-toggle').setAttribute('aria-expanded','false');
+            sibling.querySelector('.nav-nested').hidden=true;
+        });
+        toggle.setAttribute('aria-expanded','true');panel.hidden=false;
+    }
+    toggle.addEventListener('click',()=>{if(panel.hidden)openBranch();else closeBranch();});
+    entry.addEventListener('keydown',event=>{
+        if((event.key==='ArrowRight'||event.key==='ArrowDown')&&event.target===toggle){
+            event.preventDefault();event.stopPropagation();openBranch();panel.querySelector('a')?.focus();
+        }
+        if((event.key==='Escape'||event.key==='ArrowLeft')&&!panel.hidden){
+            event.preventDefault();event.stopPropagation();closeBranch();toggle.focus();
         }
     });
 });

@@ -3,7 +3,7 @@ $pageId = 'brainify';
 $pageTitle = 'brAInify | IGNITE Kazakhstan';
 $pageDescription = preg_replace('/\s+/u', ' ', $copy['intro']);
 $pageStyles = ['assets/css/brainify.css', 'assets/css/brainify-motion.css', 'assets/css/workbook-content.css'];
-$pageScripts = ['assets/js/brainify.js'];
+$pageScripts = ['assets/js/brainify.js', 'assets/js/workbook-pages.js'];
 $bodyClass = 'workbook-page';
 require __DIR__ . '/header.php';
 require __DIR__ . '/workbook-rich-text.php';
@@ -34,7 +34,8 @@ require __DIR__ . '/workbook-rich-text.php';
         <div class="workbook-prose workbook-path-intro"><details class="workbook-disclosure"><summary><h3><?= $escape($copy['pathsIntro']['title']) ?></h3><span aria-hidden="true">+</span></summary><div class="workbook-prose"><?php $renderRich($copy['pathsIntro']['body']); ?></div></details></div>
         <div class="brainify-path-grid">
             <?php foreach ($copy['paths'] as $index => $path): ?>
-                <details class="brainify-path" <?= $index === 0 ? 'open' : '' ?>>
+                <?php $pathAnchor = ['ai-path', 'creator-path', 'financial-intelligence-path', 'digital-economy-path', 'youth-path', 'digital-marketing-path', 'english-path'][$index]; ?>
+                <details class="brainify-path" id="<?= $pathAnchor ?>" <?= $index === 0 ? 'open' : '' ?>>
                     <summary><span class="brainify-path-number"><?= sprintf('%02d', $index + 1) ?></span><h3><?= $escape($path['title']) ?></h3><span class="brainify-expand" aria-hidden="true">+</span></summary>
                     <div class="brainify-path-description workbook-prose"><?php $renderRich($path['body']); ?><a href="#how-it-works">Explore the learning levels ↗</a></div>
                 </details>

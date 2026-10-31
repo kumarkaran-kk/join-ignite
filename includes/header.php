@@ -60,25 +60,41 @@ $escape = static fn($value) => htmlspecialchars($value, ENT_QUOTES, 'UTF-8');
             <nav id="main-navigation" aria-label="Main navigation">
                 <?php
                 $headerMenus = [
-                    'products' => ['PRODUCTS', [['brAInify', 'brainify']]],
-                    'about' => ['ABOUT IGNITE', [['IGNITE Leadership', 'leadership'], ['IGNITE Global Advisory Board', 'advisory-board'], ['Media', 'media'], ['FAQ', 'faqs']]],
-                    'business' => ['BUSINESS OPPORTUNITY', [['The IGNITE Opportunity', 'business'], ['Become a Brand Affiliate', 'become-a-brand-affiliate'], ['Build Your Business', 'build-your-business']]],
-                    'resources' => ['RESOURCES', [['IGNITE Blog', 'blog'], ['Training and Events', 'events'], ['Policies', 'policies']]],
-                    'support' => ['SUPPORT', [['Contact Us', 'contact'], ['Help Centre', 'help']]],
+                    'products' => ['PRODUCTS', 'products', [['brAInify', 'brainify']]],
+                    'about' => ['ABOUT IGNITE', 'about', [['About IGNITE', 'about-ignite'], ['IGNITE Leadership', 'leadership'], ['IGNITE Global Advisory Board', 'advisory-board'], ['Media', 'media'], ['FAQ', 'faqs']]],
+                    'business' => ['BUSINESS OPPORTUNITY', 'business-opportunity', [['The IGNITE Opportunity', 'opportunity'], ['Become a Brand Affiliate', 'become-a-brand-affiliate'], ['Build Your Business', 'build-your-business']]],
+                    'resources' => ['RESOURCES', 'resources', [['IGNITE Blog', 'blog'], ['Training and Events', 'events'], ['Policies', 'policies']]],
+                    'support' => ['SUPPORT', 'support', [['Contact Us', 'contact'], ['Help Centre', 'help']]],
                 ];
-                foreach ($headerMenus as $menuKey => [$menuLabel, $menuLinks]): ?>
+                require __DIR__ . '/navigation-children.php';
+                foreach ($headerMenus as $menuKey => [$menuLabel, $menuPage, $menuLinks]): ?>
                     <div class="nav-group">
-                        <button class="nav-group-toggle" type="button" aria-expanded="false" aria-controls="submenu-<?= $menuKey ?>"><?= $escape($menuLabel) ?></button>
+                        <div class="nav-group-heading">
+                            <a class="nav-parent" id="nav-label-<?= $menuKey ?>" href="<?= $escape($menuPage) ?>.php" <?= $pageId === $menuPage ? 'aria-current="page"' : '' ?>><?= $escape($menuLabel) ?></a>
+                            <button class="nav-group-toggle" type="button" aria-labelledby="nav-label-<?= $menuKey ?>" aria-expanded="false" aria-controls="submenu-<?= $menuKey ?>"></button>
+                        </div>
                         <div class="nav-submenu" id="submenu-<?= $menuKey ?>" hidden>
-                            <?php foreach ($menuLinks as [$linkLabel, $linkPage]): ?>
-                                <a href="<?= $escape($linkPage) ?>.php" <?= $pageId === $linkPage ? 'aria-current="page"' : '' ?>><?= $escape($linkLabel) ?></a>
+                            <?php foreach ($menuLinks as [$linkLabel, $linkAnchor]): ?>
+                                <?php if (isset($nestedMenus[$linkAnchor])): ?>
+                                    <div class="nav-entry">
+                                        <div class="nav-entry-heading">
+                                            <a class="nav-overview-link" id="nav-entry-<?= $escape($linkAnchor) ?>" href="<?= $escape($menuPage) ?>.php#<?= $escape($linkAnchor) ?>"><?= $escape($linkLabel) ?></a>
+                                            <button class="nav-branch-toggle" type="button" aria-expanded="false" aria-controls="nested-<?= $escape($linkAnchor) ?>" aria-labelledby="nav-entry-<?= $escape($linkAnchor) ?>"></button>
+                                        </div>
+                                        <div class="nav-nested" id="nested-<?= $escape($linkAnchor) ?>" hidden>
+                                            <?php foreach ($nestedMenus[$linkAnchor] as [$childLabel, $childHref]): ?>
+                                                <?php if ($childHref): ?><a class="nav-leaf" href="<?= $escape($childHref) ?>"><?= $escape($childLabel) ?></a>
+                                                <?php else: ?><span class="nav-download-pending" aria-disabled="true"><span><?= $escape($childLabel) ?></span><small><?= $locale === 'kk' ? 'Жақында' : ($locale === 'ru' ? 'Скоро' : 'Coming Soon') ?></small></span><?php endif; ?>
+                                            <?php endforeach; ?>
+                                        </div>
+                                    </div>
+                                <?php else: ?><a class="nav-overview-link" href="<?= $escape($menuPage) ?>.php#<?= $escape($linkAnchor) ?>"><?= $escape($linkLabel) ?></a><?php endif; ?>
                             <?php endforeach; ?>
                         </div>
                     </div>
                 <?php endforeach; ?>
             </nav>
-            <!-- <button
-                class="search-toggle" aria-label="Search website"><img src="assets/images/search.svg" alt=""></button> -->
+            <button type="button" class="search-toggle" aria-label="Search website"><img src="assets/images/search.svg" alt=""></button>
             <button
                 class="pill language" aria-label="<?= $escape($supportedLocales[$locale]) ?>"><img src="assets/images/globe.svg" alt=""> <?= strtoupper($locale) ?></button><a
                 class="pill login" href="https://distributor.joinignite.com/">Login</a>

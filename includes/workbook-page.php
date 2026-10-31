@@ -11,7 +11,7 @@ require __DIR__ . '/workbook-rich-text.php';
 [$heroIntro, $openingBody] = $splitIntro($copy['intro']);
 ?>
 <main id="page-main">
-    <section class="page-hero has-image">
+    <section class="page-hero has-image" <?= !empty($copy['heroAnchor']) ? 'id="'.$escape($copy['heroAnchor']).'"' : '' ?>>
         <img class="page-hero-image" src="assets/images/<?= $escape($copy['image']) ?>" alt="">
         <div class="page-hero-copy">
             <a class="page-back" href="index.php"><?= $locale === 'kk' ? 'Басты бет' : ($locale === 'ru' ? 'Главная' : 'Home') ?> / <?= $escape($copy['title']) ?></a>
@@ -41,9 +41,10 @@ require __DIR__ . '/workbook-rich-text.php';
                             <a href="<?= $escape($item['href']) ?>" target="_blank" rel="noopener noreferrer">Read publication feature <span aria-hidden="true">↗</span></a>
                         </article>
                     <?php else: ?>
-                        <article class="<?= $section['type'] === 'cards' ? 'page-card' : 'workbook-prose' ?>">
+                        <article class="<?= $section['type'] === 'cards' ? 'page-card' : 'workbook-prose' ?>" <?= isset($item['id']) ? 'id="'.$escape($item['id']).'"' : '' ?>>
                             <?php if ($section['type'] === 'cards'): ?><span class="page-number"><?= sprintf('%02d', $index + 1) ?></span><?php endif; ?>
                             <?php if ($item['title']): ?><h3><?= $escape($item['title']) ?></h3><?php endif; ?>
+                            <?php if (!empty($item['status'])): ?><span class="workbook-status"><?= $escape($item['status']) ?></span><?php endif; ?>
                             <?php $renderRich($item['body']); ?>
                             <?php if (!empty($item['href'])): ?><a class="<?= $section['type'] === 'cards' ? '' : 'brainify-button' ?>" href="<?= $escape($item['href']) ?>"><?= $escape($item['label'] ?? $item['title']) ?> <span aria-hidden="true">↗</span></a><?php endif; ?>
                         </article>

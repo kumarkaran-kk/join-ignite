@@ -5,7 +5,7 @@
       "en": {
         "title": "Products",
         "heading": "IGNITE Product Philosophy",
-        "intro": "At IGNITE Social Enterprise, we don’t just sell products; we engineer the tools for a life of purpose and empowerment. Our product philosophy is centred on a single, powerful idea: empowering our network to live an inspired and future-ready life. Each product in our ecosystem has been carefully chosen not for market appeal alone, but for its ability to deliver genuine, long-term value.\n\nWe believe in a holistic approach to success. That is why our product categories work together to create a comprehensive ecosystem for personal and professional growth:\n\nbrAInify\nSANAREY \nSENA \nBrushO \nBright \ndrinkHRW",
+        "intro": "At IGNITE Social Enterprise, we don’t just sell products; we engineer the tools for a life of purpose and empowerment. Our product philosophy is centred on a single, powerful idea: empowering our network to live an inspired and future-ready life. Each product in our ecosystem has been carefully chosen not for market appeal alone, but for its ability to deliver genuine, long-term value.\n\nWe believe in a holistic approach to success. That is why our product categories work together to create a comprehensive ecosystem for personal and professional growth:",
         "sections": [
           {
             "title": "Products",
@@ -13,9 +13,35 @@
             "items": [
               {
                 "title": "brAInify",
-                "body": "",
+                "body": "brAInify is a next-generation, AI-driven online education platform, proudly introduced as part of the IGNITE Social Enterprise ecosystem.",
                 "href": "brainify.php",
-                "label": "brAInify"
+                "label": "brAInify",
+                "id": "brainify"
+              },
+              {
+                "title": "SANAREY",
+                "body": "",
+                "status": "Coming Soon"
+              },
+              {
+                "title": "SENA",
+                "body": "",
+                "status": "Coming Soon"
+              },
+              {
+                "title": "BrushO",
+                "body": "",
+                "status": "Coming Soon"
+              },
+              {
+                "title": "Bright",
+                "body": "",
+                "status": "Coming Soon"
+              },
+              {
+                "title": "drinkHRW",
+                "body": "",
+                "status": "Coming Soon"
               }
             ]
           }
@@ -25,7 +51,7 @@
       "kk": {
         "title": "Өнімдер",
         "heading": "IGNITE өнім философиясы",
-        "intro": "IGNITE Social Enterprise компаниясында біз жай ғана өнім сатпаймыз; біз адамдарға мақсатты, саналы әрі мүмкіндіктерге толы өмір сүруге көмектесетін құралдарды ұсынамыз. Біздің өнім философиямыз бір маңызды идеяға негізделген: желіміздің әрбір мүшесіне шабытпен өмір сүріп, болашаққа дайын болуға мүмкіндік беру. Біздің экожүйеміздегі әрбір өнім тек нарықтағы тартымдылығы үшін ғана емес, сонымен қатар шынайы әрі ұзақ мерзімді құндылық ұсына алатындығы үшін мұқият таңдалған.\n\nБіз табысқа жетудің жан-жақты тәсіліне сенеміз. Сондықтан біздің өнім санаттарымыз жеке тұлғалық және кәсіби дамуға арналған кешенді экожүйені қалыптастыру үшін бір-бірін толықтырады:\n\nbrAInify\n\nSANAREY \n\nSENA \n\nBrushO \n\nBright \n\ndrinkHRW",
+        "intro": "IGNITE Social Enterprise компаниясында біз жай ғана өнім сатпаймыз; біз адамдарға мақсатты, саналы әрі мүмкіндіктерге толы өмір сүруге көмектесетін құралдарды ұсынамыз. Біздің өнім философиямыз бір маңызды идеяға негізделген: желіміздің әрбір мүшесіне шабытпен өмір сүріп, болашаққа дайын болуға мүмкіндік беру. Біздің экожүйеміздегі әрбір өнім тек нарықтағы тартымдылығы үшін ғана емес, сонымен қатар шынайы әрі ұзақ мерзімді құндылық ұсына алатындығы үшін мұқият таңдалған.\n\nБіз табысқа жетудің жан-жақты тәсіліне сенеміз. Сондықтан біздің өнім санаттарымыз жеке тұлғалық және кәсіби дамуға арналған кешенді экожүйені қалыптастыру үшін бір-бірін толықтырады:",
         "sections": [
           {
             "title": "Өнімдер",
@@ -33,9 +59,35 @@
             "items": [
               {
                 "title": "brAInify",
-                "body": "",
+                "body": "brAInify — IGNITE Social Enterprise экожүйесінің бір бөлігі ретінде мақтанышпен ұсынылған, жасанды интеллект негізінде жұмыс істейтін жаңа буындағы онлайн білім беру платформасы.",
                 "href": "brainify.php",
-                "label": "brAInify"
+                "label": "brAInify",
+                "id": "brainify"
+              },
+              {
+                "title": "SANAREY",
+                "body": "",
+                "status": "Жақында"
+              },
+              {
+                "title": "SENA",
+                "body": "",
+                "status": "Жақында"
+              },
+              {
+                "title": "BrushO",
+                "body": "",
+                "status": "Жақында"
+              },
+              {
+                "title": "Bright",
+                "body": "",
+                "status": "Жақында"
+              },
+              {
+                "title": "drinkHRW",
+                "body": "",
+                "status": "Жақында"
               }
             ]
           }
@@ -45,7 +97,7 @@
       "ru": {
         "title": "Продукты",
         "heading": "Философия продуктов IGNITE",
-        "intro": "В IGNITE Social Enterprise мы не просто продаём продукты — мы создаём инструменты для осмысленной жизни, наполненной возможностями и уверенностью в собственных силах. В основе нашей продуктовой философии лежит одна важная идея: помогать участникам нашей сети жить вдохновлённой жизнью и быть готовыми к будущему. Каждый продукт в нашей экосистеме тщательно отбирается не только с учётом его привлекательности на рынке, но и способности приносить реальную, долгосрочную пользу.\n\nМы верим в комплексный подход к успеху. Именно поэтому наши продуктовые категории дополняют друг друга, формируя единую экосистему для личностного и профессионального роста:\n\nbrAInify\n\nSANAREY \n\nSENA \n\nBrushO \n\nBright \n\ndrinkHRW",
+        "intro": "В IGNITE Social Enterprise мы не просто продаём продукты — мы создаём инструменты для осмысленной жизни, наполненной возможностями и уверенностью в собственных силах. В основе нашей продуктовой философии лежит одна важная идея: помогать участникам нашей сети жить вдохновлённой жизнью и быть готовыми к будущему. Каждый продукт в нашей экосистеме тщательно отбирается не только с учётом его привлекательности на рынке, но и способности приносить реальную, долгосрочную пользу.\n\nМы верим в комплексный подход к успеху. Именно поэтому наши продуктовые категории дополняют друг друга, формируя единую экосистему для личностного и профессионального роста:",
         "sections": [
           {
             "title": "Продукты",
@@ -53,9 +105,35 @@
             "items": [
               {
                 "title": "brAInify",
-                "body": "",
+                "body": "brAInify — образовательная онлайн-платформа нового поколения на основе искусственного интеллекта, представленная в составе экосистемы IGNITE Social Enterprise.",
                 "href": "brainify.php",
-                "label": "brAInify"
+                "label": "brAInify",
+                "id": "brainify"
+              },
+              {
+                "title": "SANAREY",
+                "body": "",
+                "status": "Скоро"
+              },
+              {
+                "title": "SENA",
+                "body": "",
+                "status": "Скоро"
+              },
+              {
+                "title": "BrushO",
+                "body": "",
+                "status": "Скоро"
+              },
+              {
+                "title": "Bright",
+                "body": "",
+                "status": "Скоро"
+              },
+              {
+                "title": "drinkHRW",
+                "body": "",
+                "status": "Скоро"
               }
             ]
           }
@@ -75,27 +153,45 @@
             "items": [
               {
                 "title": "Our Company",
-                "body": "",
+                "body": "Headquartered in Hong Kong, IGNITE Social Enterprise is a global direct selling social enterprise bridging artificial intelligence learning via the brAInify AI education platform with physical health solutions from SANAREY wellness products.",
                 "href": "our-company.php",
-                "label": "Our Company"
+                "label": "Our Company",
+                "id": "our-company"
               },
               {
                 "title": "Our Promise",
-                "body": "",
+                "body": "The IGNITE Social Enterprise mission is to provide individuals worldwide with accessible digital upskilling, personal wellness solutions, and sustainable entrepreneurial opportunities.",
                 "href": "our-promise.php",
-                "label": "Our Promise"
+                "label": "Our Promise",
+                "id": "our-promise"
               },
               {
                 "title": "IGNITE Leadership",
-                "body": "",
+                "body": "At the helm of IGNITE isn’t just a group of executives—it’s a global family of servant leaders.",
                 "href": "leadership.php",
-                "label": "IGNITE Leadership"
+                "label": "IGNITE Leadership",
+                "id": "leadership"
               },
               {
                 "title": "IGNITE Global Advisory Board",
-                "body": "",
+                "body": "IGNITE Social Enterprise is guided by a distinguished Advisory Board whose collective expertise spans corporate governance, frontier science, and global media, bringing institutional credibility, scientific rigour, and international reach to our mission.",
                 "href": "advisory-board.php",
-                "label": "IGNITE Global Advisory Board"
+                "label": "IGNITE Global Advisory Board",
+                "id": "advisory-board"
+              },
+              {
+                "title": "Media",
+                "body": "Discover how media outlets around the world are covering IGNITE's mission, innovation, and people-first approach.",
+                "href": "media.php",
+                "label": "Media",
+                "id": "media"
+              },
+              {
+                "title": "FAQ",
+                "body": "Understanding IGNITE Social Enterprise begins with total transparency, regulatory compliance, and a commitment to consumer trust.",
+                "href": "faqs.php",
+                "label": "FAQ",
+                "id": "faqs"
               },
               {
                 "title": "Products",
@@ -106,7 +202,8 @@
             ]
           }
         ],
-        "image": "about.png"
+        "image": "about.png",
+        "heroAnchor": "about-ignite"
       },
       "kk": {
         "title": "IGNITE туралы",
@@ -119,27 +216,45 @@
             "items": [
               {
                 "title": "Біздің компания",
-                "body": "",
+                "body": "Штаб-пәтері Гонконгта орналасқан IGNITE Social Enterprise — brAInify AI білім беру платформасы арқылы жасанды интеллект саласындағы оқытуды SANAREY сауықтыру өнімдері ұсынатын физикалық денсаулықты қолдау шешімдерімен біріктіретін, тікелей сату саласында қызмет ететін жаһандық әлеуметтік кәсіпорын.",
                 "href": "our-company.php",
-                "label": "Біздің компания"
+                "label": "Біздің компания",
+                "id": "our-company"
               },
               {
                 "title": "Біздің уәдеміз",
-                "body": "",
+                "body": "IGNITE Social Enterprise миссиясы — бүкіл әлемдегі адамдарға қолжетімді цифрлық дағдыларды дамыту мүмкіндіктерін, жеке әл-ауқатты қолдауға арналған шешімдерді және тұрақты кәсіпкерлік мүмкіндіктерді ұсыну.",
                 "href": "our-promise.php",
-                "label": "Біздің уәдеміз"
+                "label": "Біздің уәдеміз",
+                "id": "our-promise"
               },
               {
                 "title": "IGNITE басшылығы",
-                "body": "",
+                "body": "IGNITE басшылығында жай ғана топ-менеджерлер емес, өзгелерге қызмет етуді басты қағидасы санайтын көшбасшылардан құралған жаһандық отбасы тұр.",
                 "href": "leadership.php",
-                "label": "IGNITE басшылығы"
+                "label": "IGNITE басшылығы",
+                "id": "leadership"
               },
               {
                 "title": "IGNITE жаһандық консультативтік кеңесі",
-                "body": "",
+                "body": "IGNITE Social Enterprise қызметіне корпоративтік басқару, озық ғылым және жаһандық медиа салаларында мол тәжірибесі бар беделді консультативтік кеңес стратегиялық бағыт береді.",
                 "href": "advisory-board.php",
-                "label": "IGNITE жаһандық консультативтік кеңесі"
+                "label": "IGNITE жаһандық консультативтік кеңесі",
+                "id": "advisory-board"
+              },
+              {
+                "title": "БАҚ",
+                "body": "Әлемнің түкпір-түкпіріндегі бұқаралық ақпарат құралдарының IGNITE миссиясы, инновациялары және адамды бірінші орынға қоятын тәсілі туралы қалай жазып жатқанын біліңіз.",
+                "href": "media.php",
+                "label": "БАҚ",
+                "id": "media"
+              },
+              {
+                "title": "Жиі қойылатын сұрақтар (FAQ)",
+                "body": "IGNITE Social Enterprise қызметін түсінудің негізі — толық ашықтық, нормативтік талаптарды сақтау және тұтынушылардың сенімін ақтауға деген берік міндеттеме.",
+                "href": "faqs.php",
+                "label": "Жиі қойылатын сұрақтар (FAQ)",
+                "id": "faqs"
               },
               {
                 "title": "Өнімдер",
@@ -150,7 +265,8 @@
             ]
           }
         ],
-        "image": "about.png"
+        "image": "about.png",
+        "heroAnchor": "about-ignite"
       },
       "ru": {
         "title": "Об IGNITE",
@@ -163,27 +279,45 @@
             "items": [
               {
                 "title": "Наша компания",
-                "body": "",
+                "body": "IGNITE Social Enterprise со штаб-квартирой в Гонконге — глобальное социальное предприятие прямых продаж, объединяющее обучение искусственному интеллекту на образовательной платформе brAInify с решениями для физического здоровья — оздоровительной продукцией SANAREY.",
                 "href": "our-company.php",
-                "label": "Наша компания"
+                "label": "Наша компания",
+                "id": "our-company"
               },
               {
                 "title": "Наше обещание",
-                "body": "",
+                "body": "Миссия IGNITE Social Enterprise — предоставлять людям по всему миру доступное обучение цифровым навыкам, решения для личного благополучия и устойчивые предпринимательские возможности.",
                 "href": "our-promise.php",
-                "label": "Наше обещание"
+                "label": "Наше обещание",
+                "id": "our-promise"
               },
               {
                 "title": "Руководство IGNITE",
-                "body": "",
+                "body": "Во главе IGNITE — не просто группа руководителей, а глобальная семья лидеров, для которых служение людям стоит на первом месте.",
                 "href": "leadership.php",
-                "label": "Руководство IGNITE"
+                "label": "Руководство IGNITE",
+                "id": "leadership"
               },
               {
                 "title": "Глобальный консультативный совет IGNITE",
-                "body": "",
+                "body": "IGNITE Social Enterprise опирается на рекомендации авторитетного Консультативного совета, объединяющего опыт корпоративного управления, передовой науки и международных медиа.",
                 "href": "advisory-board.php",
-                "label": "Глобальный консультативный совет IGNITE"
+                "label": "Глобальный консультативный совет IGNITE",
+                "id": "advisory-board"
+              },
+              {
+                "title": "СМИ",
+                "body": "Узнайте, как СМИ разных стран рассказывают о миссии IGNITE, инновациях и подходе, ставящем людей на первое место.",
+                "href": "media.php",
+                "label": "СМИ",
+                "id": "media"
+              },
+              {
+                "title": "Часто задаваемые вопросы (FAQ)",
+                "body": "Знакомство с IGNITE Social Enterprise начинается с полной прозрачности, соблюдения нормативных требований и приверженности доверию потребителей.",
+                "href": "faqs.php",
+                "label": "Часто задаваемые вопросы (FAQ)",
+                "id": "faqs"
               },
               {
                 "title": "Продукты",
@@ -194,7 +328,8 @@
             ]
           }
         ],
-        "image": "about.png"
+        "image": "about.png",
+        "heroAnchor": "about-ignite"
       }
     },
     "our-company": {
@@ -1066,19 +1201,22 @@
                 "title": "01. THE IGNITE OPPORTUNITY",
                 "body": "More than a business. A world of possibilities.\n\nDiscover a modern approach to entrepreneurship built around freedom of choice, meaningful connections, and opportunities for growth.\n\nExplore what makes IGNITE different, discover the ways you can earn, and get inspired by the journeys of people who are building their own futures.",
                 "href": "business.php",
-                "label": "EXPLORE THE OPPORTUNITY"
+                "label": "EXPLORE THE OPPORTUNITY",
+                "id": "opportunity"
               },
               {
                 "title": "02. BECOME A BRAND AFFILIATE",
                 "body": "Your journey starts here.\n\nYou don't need to have all the answers to begin. You just need the ambition to take the first step.\n\nDiscover how to become an IGNITE Brand Affiliate, understand the registration process, and learn how to get started on your entrepreneurial journey.",
                 "href": "become-a-brand-affiliate.php",
-                "label": "GET STARTED WITH IGNITE"
+                "label": "GET STARTED WITH IGNITE",
+                "id": "become-a-brand-affiliate"
               },
               {
                 "title": "03. BUILD YOUR BUSINESS",
                 "body": "Your ambition drives you. Our ecosystem supports you.\n\nBuilding a business is a journey of continuous learning, growth, and action.\n\nAccess the tools, training, and resources designed to help you develop your skills, grow your confidence, and navigate your entrepreneurial journey with IGNITE.",
                 "href": "build-your-business.php",
-                "label": "BUILD YOUR BUSINESS"
+                "label": "BUILD YOUR BUSINESS",
+                "id": "build-your-business"
               }
             ]
           },
@@ -1110,19 +1248,22 @@
                 "title": "01. IGNITE ҰСЫНАТЫН МҮМКІНДІКТЕР",
                 "body": "Жай ғана бизнес емес. Шексіз мүмкіндіктер әлемі.\n\nТаңдау еркіндігіне, мағыналы қарым-қатынастарға және даму мүмкіндіктеріне негізделген кәсіпкерліктің заманауи тәсілімен танысыңыз.\n\nIGNITE компаниясының ерекшеліктерін ашыңыз, табыс табудың түрлі жолдарын зерттеңіз және өз болашағын өз қолымен қалыптастырып жатқан адамдардың жетістік жолынан шабыт алыңыз.",
                 "href": "business.php",
-                "label": "МҮМКІНДІКТЕРМЕН ТАНЫСУ"
+                "label": "МҮМКІНДІКТЕРМЕН ТАНЫСУ",
+                "id": "opportunity"
               },
               {
                 "title": "02. BRAND AFFILIATE БОЛЫҢЫЗ",
                 "body": "Сіздің сапарыңыз осы жерден басталады.\n\nБастау үшін барлық сұрақтың жауабын білу міндетті емес. Ең бастысы — алғашқы қадамды жасауға деген құлшыныс.\n\nIGNITE Brand Affiliate болу жолдарымен танысыңыз, тіркелу үдерісін түсініңіз және кәсіпкерлік сапарыңызды қалай бастау керектігін біліңіз.",
                 "href": "become-a-brand-affiliate.php",
-                "label": "IGNITE АРҚЫЛЫ АЛҒАШҚЫ ҚАДАМЫҢЫЗДЫ ЖАСАҢЫЗ"
+                "label": "IGNITE АРҚЫЛЫ АЛҒАШҚЫ ҚАДАМЫҢЫЗДЫ ЖАСАҢЫЗ",
+                "id": "become-a-brand-affiliate"
               },
               {
                 "title": "03. ӨЗ БИЗНЕСІҢІЗДІ ДАМЫТЫҢЫЗ",
                 "body": "Сізді алға жетелейтін — мақсатыңыз. Біз сізге қолдау көрсететін экожүйені ұсынамыз.\n\nБизнес құру — үздіксіз білім алуды, дамуды және нақты әрекет етуді талап ететін сапар.\n\nДағдыларыңызды жетілдіруге, өзіңізге деген сенімділікті арттыруға және IGNITE арқылы кәсіпкерлік жолыңызды сенімді жалғастыруға көмектесетін құралдарға, оқыту бағдарламаларына және ресурстарға қол жеткізіңіз.",
                 "href": "build-your-business.php",
-                "label": "ӨЗ БИЗНЕСІҢІЗДІ ДАМЫТЫҢЫЗ"
+                "label": "ӨЗ БИЗНЕСІҢІЗДІ ДАМЫТЫҢЫЗ",
+                "id": "build-your-business"
               }
             ]
           },
@@ -1154,19 +1295,22 @@
                 "title": "01. ВОЗМОЖНОСТИ IGNITE",
                 "body": "Больше, чем бизнес. Мир возможностей.\n\nПознакомьтесь с современным подходом к предпринимательству, основанным на свободе выбора, значимых связях и возможностях роста.\n\nУзнайте, что отличает IGNITE, изучите способы заработка и вдохновитесь историями людей, создающих собственное будущее.",
                 "href": "business.php",
-                "label": "ИЗУЧИТЬ ВОЗМОЖНОСТИ"
+                "label": "ИЗУЧИТЬ ВОЗМОЖНОСТИ",
+                "id": "opportunity"
               },
               {
                 "title": "02. СТАТЬ BRAND AFFILIATE",
                 "body": "Ваш путь начинается здесь.\n\nЧтобы начать, не обязательно знать ответы на все вопросы. Достаточно стремления сделать первый шаг.\n\nУзнайте, как стать IGNITE Brand Affiliate, разобраться в регистрации и начать свой предпринимательский путь.",
                 "href": "become-a-brand-affiliate.php",
-                "label": "НАЧАТЬ С IGNITE"
+                "label": "НАЧАТЬ С IGNITE",
+                "id": "become-a-brand-affiliate"
               },
               {
                 "title": "03. РАЗВИВАЙТЕ СВОЙ БИЗНЕС",
                 "body": "Вас движут амбиции. Вас поддерживает наша экосистема.\n\nСоздание бизнеса — это путь постоянного обучения, роста и действий.\n\nПолучите доступ к инструментам, обучению и ресурсам, которые помогут развивать навыки, укреплять уверенность и двигаться по предпринимательскому пути вместе с IGNITE.",
                 "href": "build-your-business.php",
-                "label": "РАЗВИВАТЬ БИЗНЕС"
+                "label": "РАЗВИВАТЬ БИЗНЕС",
+                "id": "build-your-business"
               }
             ]
           },
@@ -2111,17 +2255,20 @@
             "items": [
               {
                 "title": "GETTING STARTED",
-                "body": "EXPLORE THE POSSIBILITIES. FIND YOUR WHY.\n\nBefore you begin, take the time to discover what IGNITE is all about. Get to know our products, understand our business model, and explore the opportunities available to you as an independent Brand Affiliate.\n\nThere's no single path to success. What matters is finding the one that aligns with your goals, ambitions, and vision for the future."
+                "body": "EXPLORE THE POSSIBILITIES. FIND YOUR WHY.\n\nBefore you begin, take the time to discover what IGNITE is all about. Get to know our products, understand our business model, and explore the opportunities available to you as an independent Brand Affiliate.\n\nThere's no single path to success. What matters is finding the one that aligns with your goals, ambitions, and vision for the future.",
+                "id": "getting-started"
               },
               {
                 "title": "REGISTRATION",
                 "body": "YOUR NEXT CHAPTER BEGINS WITH A CONNECTION.\n\nReady to become an IGNITE Brand Affiliate? Getting started is simple.\n\nIf someone introduced you to IGNITE, reach out to them to learn more about the registration process. Your referring Brand Affiliate can guide you through the necessary steps and help you begin your journey.\n\nNEW TO IGNITE? WE'LL HELP YOU CONNECT.\n\nIf you haven't been introduced by an existing Brand Affiliate, simply email us at spark@joinignite.com and our team will guide you on how to proceed.",
                 "href": "contact.php",
-                "label": "CONTACT US"
+                "label": "CONTACT US",
+                "id": "registration"
               },
               {
                 "title": "YOUR NEXT STEPS",
-                "body": "YOU'RE IN. NOW MAKE IT COUNT.\n\nOnce your registration is complete, it's time to turn possibilities into action.\n\nExplore the IGNITE ecosystem, deepen your product knowledge, participate in training opportunities, and connect with a community of entrepreneurs who are building their futures with purpose.\n\nRemember, your journey doesn't have to look like anyone else's. Set your own goals, keep learning, and take each step with intention.\n\nTHE OPPORTUNITY IS HERE. WHAT YOU MAKE OF IT IS UP TO YOU."
+                "body": "YOU'RE IN. NOW MAKE IT COUNT.\n\nOnce your registration is complete, it's time to turn possibilities into action.\n\nExplore the IGNITE ecosystem, deepen your product knowledge, participate in training opportunities, and connect with a community of entrepreneurs who are building their futures with purpose.\n\nRemember, your journey doesn't have to look like anyone else's. Set your own goals, keep learning, and take each step with intention.\n\nTHE OPPORTUNITY IS HERE. WHAT YOU MAKE OF IT IS UP TO YOU.",
+                "id": "next-steps"
               }
             ]
           },
@@ -2151,17 +2298,20 @@
             "items": [
               {
                 "title": "АЛҒАШҚЫ ҚАДАМДАР",
-                "body": "МҮМКІНДІКТЕРДІ ЗЕРТТЕҢІЗ. ӨЗ МАҚСАТЫҢЫЗДЫ АНЫҚТАҢЫЗ.\n\nБастамас бұрын IGNITE туралы жан-жақты білуге уақыт бөліңіз. Өнімдерімізбен танысыңыз, бизнес-моделімізді түсініңіз және тәуелсіз Brand Affiliate ретінде сізге қолжетімді мүмкіндіктерді зерттеңіз.\n\nТабысқа жетудің жалғыз ғана жолы жоқ. Ең бастысы — өз мақсаттарыңызға, ұмтылыстарыңызға және болашаққа деген көзқарасыңызға сәйкес келетін жолды табу."
+                "body": "МҮМКІНДІКТЕРДІ ЗЕРТТЕҢІЗ. ӨЗ МАҚСАТЫҢЫЗДЫ АНЫҚТАҢЫЗ.\n\nБастамас бұрын IGNITE туралы жан-жақты білуге уақыт бөліңіз. Өнімдерімізбен танысыңыз, бизнес-моделімізді түсініңіз және тәуелсіз Brand Affiliate ретінде сізге қолжетімді мүмкіндіктерді зерттеңіз.\n\nТабысқа жетудің жалғыз ғана жолы жоқ. Ең бастысы — өз мақсаттарыңызға, ұмтылыстарыңызға және болашаққа деген көзқарасыңызға сәйкес келетін жолды табу.",
+                "id": "getting-started"
               },
               {
                 "title": "ТІРКЕЛУ",
                 "body": "СІЗДІҢ ЖАҢА КЕЗЕҢІҢІЗ БАЙЛАНЫС ОРНАТУДАН БАСТАЛАДЫ.\n\nIGNITE Brand Affiliate болуға дайынсыз ба? Алғашқы қадамды жасау өте оңай.\n\nЕгер сізді IGNITE компаниясымен біреу таныстырған болса, тіркелу процесі туралы толығырақ білу үшін сол адамға хабарласыңыз. Сізді шақырған Brand Affiliate қажетті қадамдар бойынша бағыт-бағдар беріп, кәсіпкерлік жолыңызды бастауға көмектеседі.\n\nIGNITE КОМПАНИЯСЫМЕН ЖАҢАДАН ТАНЫСЫП ЖАТЫРСЫЗ БА? БІЗ СІЗГЕ БАЙЛАНЫС ОРНАТУҒА КӨМЕКТЕСЕМІЗ.\n\nЕгер сізді IGNITE компаниясымен бұрыннан тіркелген Brand Affiliate таныстырмаған болса, жай ғана spark@joinignite.com электрондық поштасына хат жолдаңыз. Біздің команда сізге келесі қадамдар бойынша бағыт-бағдар береді.",
                 "href": "contact.php",
-                "label": "БІЗБЕН БАЙЛАНЫСЫҢЫЗ"
+                "label": "БІЗБЕН БАЙЛАНЫСЫҢЫЗ",
+                "id": "registration"
               },
               {
                 "title": "СІЗДІҢ КЕЛЕСІ ҚАДАМДАРЫҢЫЗ",
-                "body": "СІЗ ЕНДІ БІЗБЕН БІРГЕСІЗ. МҮМКІНДІКТІ ПАЙДАЛАНАТЫН УАҚЫТ КЕЛДІ.\n\nТіркелуіңіз аяқталған соң, мүмкіндіктерді нақты әрекетке айналдыратын уақыт келеді.\n\nIGNITE экожүйесімен танысыңыз, өнімдер туралы біліміңізді тереңдетіңіз, оқу бағдарламаларына қатысыңыз және болашағын нақты мақсатпен құрып жатқан кәсіпкерлер қауымдастығымен байланыс орнатыңыз.\n\nЕсіңізде болсын, сіздің жолыңыз басқалардың жолына ұқсауы міндетті емес. Өз мақсаттарыңызды белгілеңіз, үздіксіз білім алыңыз және әр қадамыңызды саналы түрде жасаңыз.\n\nМҮМКІНДІК АЛДЫҢЫЗДА. ОНЫ ҚАЛАЙ ПАЙДАЛАНАТЫНЫҢЫЗ ӨЗ ҚОЛЫҢЫЗДА."
+                "body": "СІЗ ЕНДІ БІЗБЕН БІРГЕСІЗ. МҮМКІНДІКТІ ПАЙДАЛАНАТЫН УАҚЫТ КЕЛДІ.\n\nТіркелуіңіз аяқталған соң, мүмкіндіктерді нақты әрекетке айналдыратын уақыт келеді.\n\nIGNITE экожүйесімен танысыңыз, өнімдер туралы біліміңізді тереңдетіңіз, оқу бағдарламаларына қатысыңыз және болашағын нақты мақсатпен құрып жатқан кәсіпкерлер қауымдастығымен байланыс орнатыңыз.\n\nЕсіңізде болсын, сіздің жолыңыз басқалардың жолына ұқсауы міндетті емес. Өз мақсаттарыңызды белгілеңіз, үздіксіз білім алыңыз және әр қадамыңызды саналы түрде жасаңыз.\n\nМҮМКІНДІК АЛДЫҢЫЗДА. ОНЫ ҚАЛАЙ ПАЙДАЛАНАТЫНЫҢЫЗ ӨЗ ҚОЛЫҢЫЗДА.",
+                "id": "next-steps"
               }
             ]
           },
@@ -2191,17 +2341,20 @@
             "items": [
               {
                 "title": "С ЧЕГО НАЧАТЬ",
-                "body": "ИЗУЧИТЕ ВОЗМОЖНОСТИ. НАЙДИТЕ СВОЮ ЦЕЛЬ.\n\nПрежде чем начать, познакомьтесь с IGNITE. Изучите продукцию, разберитесь в бизнес-модели и узнайте, какие возможности доступны независимому Brand Affiliate.\n\nЕдиного пути к успеху нет. Важно найти тот, который соответствует вашим целям, амбициям и видению будущего."
+                "body": "ИЗУЧИТЕ ВОЗМОЖНОСТИ. НАЙДИТЕ СВОЮ ЦЕЛЬ.\n\nПрежде чем начать, познакомьтесь с IGNITE. Изучите продукцию, разберитесь в бизнес-модели и узнайте, какие возможности доступны независимому Brand Affiliate.\n\nЕдиного пути к успеху нет. Важно найти тот, который соответствует вашим целям, амбициям и видению будущего.",
+                "id": "getting-started"
               },
               {
                 "title": "РЕГИСТРАЦИЯ",
                 "body": "НОВЫЙ ЭТАП НАЧИНАЕТСЯ С ОБЩЕНИЯ.\n\nГотовы стать IGNITE Brand Affiliate? Начать просто.\n\nЕсли кто-то познакомил вас с IGNITE, обратитесь к этому человеку, чтобы узнать о регистрации. Ваш рекомендующий Brand Affiliate объяснит необходимые шаги и поможет начать путь.\n\nВПЕРВЫЕ В IGNITE? МЫ ПОМОЖЕМ НАЛАДИТЬ СВЯЗЬ.\n\nЕсли вас не представил действующий Brand Affiliate, напишите на spark@joinignite.com. Наша команда подскажет, как действовать дальше.",
                 "href": "contact.php",
-                "label": "СВЯЗАТЬСЯ С НАМИ"
+                "label": "СВЯЗАТЬСЯ С НАМИ",
+                "id": "registration"
               },
               {
                 "title": "ВАШИ СЛЕДУЮЩИЕ ШАГИ",
-                "body": "ВЫ ПРИСОЕДИНИЛИСЬ. ТЕПЕРЬ ПРЕВРАЩАЙТЕ ВОЗМОЖНОСТИ В ДЕЛО.\n\nПосле завершения регистрации пора переходить к действиям.\n\nИзучайте экосистему IGNITE, углубляйте знания о продукции, участвуйте в обучении и общайтесь с предпринимателями, которые осознанно создают своё будущее.\n\nПомните, ваш путь не обязан быть похожим на чей-то ещё. Ставьте собственные цели, продолжайте учиться и действуйте обдуманно на каждом шаге.\n\nВОЗМОЖНОСТЬ УЖЕ ЕСТЬ. КАК ВЫ ЕЁ ИСПОЛЬЗУЕТЕ — ЗАВИСИТ ОТ ВАС."
+                "body": "ВЫ ПРИСОЕДИНИЛИСЬ. ТЕПЕРЬ ПРЕВРАЩАЙТЕ ВОЗМОЖНОСТИ В ДЕЛО.\n\nПосле завершения регистрации пора переходить к действиям.\n\nИзучайте экосистему IGNITE, углубляйте знания о продукции, участвуйте в обучении и общайтесь с предпринимателями, которые осознанно создают своё будущее.\n\nПомните, ваш путь не обязан быть похожим на чей-то ещё. Ставьте собственные цели, продолжайте учиться и действуйте обдуманно на каждом шаге.\n\nВОЗМОЖНОСТЬ УЖЕ ЕСТЬ. КАК ВЫ ЕЁ ИСПОЛЬЗУЕТЕ — ЗАВИСИТ ОТ ВАС.",
+                "id": "next-steps"
               }
             ]
           },
@@ -2235,25 +2388,29 @@
                 "title": "BA RESOURCES",
                 "body": "Access downloadable guides, materials, and resources to support your business journey.",
                 "href": "https://distributor.joinignite.com/",
-                "label": "EXPLORE RESOURCES"
+                "label": "EXPLORE RESOURCES",
+                "id": "ba-resources"
               },
               {
                 "title": "BA TOOLS",
                 "body": "Find essential downloadable tools and materials to help you organise, manage, and grow your business.",
                 "href": "https://distributor.joinignite.com/",
-                "label": "ACCESS BA TOOLS"
+                "label": "ACCESS BA TOOLS",
+                "id": "ba-tools"
               },
               {
                 "title": "TRAINING",
                 "body": "Build your knowledge, sharpen your skills, and stay connected through IGNITE training programmes and events.",
                 "href": "events.php",
-                "label": "EXPLORE TRAINING"
+                "label": "EXPLORE TRAINING",
+                "id": "training"
               },
               {
                 "title": "FAQs",
                 "body": "Have questions? Find helpful answers about IGNITE, our products, and the business opportunity.",
                 "href": "faqs.php",
-                "label": "FIND ANSWERS"
+                "label": "FIND ANSWERS",
+                "id": "faqs"
               }
             ]
           }
@@ -2273,25 +2430,29 @@
                 "title": "BA РЕСУРСТАРЫ",
                 "body": "Бизнесіңізді дамытуға көмектесетін жүктеп алуға болатын нұсқаулықтарға, материалдарға және ресурстарға қол жеткізіңіз.",
                 "href": "https://distributor.joinignite.com/",
-                "label": "РЕСУРСТАРМЕН ТАНЫСЫҢЫЗ"
+                "label": "РЕСУРСТАРМЕН ТАНЫСЫҢЫЗ",
+                "id": "ba-resources"
               },
               {
                 "title": "BA ҚҰРАЛДАРЫ",
                 "body": "Бизнесіңізді ұйымдастыруға, басқаруға және дамытуға көмектесетін жүктеп алуға болатын қажетті құралдар мен материалдарды табыңыз.",
                 "href": "https://distributor.joinignite.com/",
-                "label": "BRAND AFFILIATE ҚҰРАЛДАРЫНА ҚОЛ ЖЕТКІЗІҢІЗ"
+                "label": "BRAND AFFILIATE ҚҰРАЛДАРЫНА ҚОЛ ЖЕТКІЗІҢІЗ",
+                "id": "ba-tools"
               },
               {
                 "title": "ОҚЫТУ",
                 "body": "IGNITE оқу бағдарламалары мен іс-шаралары арқылы біліміңізді арттырыңыз, дағдыларыңызды жетілдіріңіз және қауымдастықпен тұрақты байланыста болыңыз.",
                 "href": "events.php",
-                "label": "ОҚУ БАҒДАРЛАМАЛАРЫМЕН ТАНЫСЫҢЫЗ"
+                "label": "ОҚУ БАҒДАРЛАМАЛАРЫМЕН ТАНЫСЫҢЫЗ",
+                "id": "training"
               },
               {
                 "title": "ЖИІ ҚОЙЫЛАТЫН СҰРАҚТАР",
                 "body": "IGNITE, өнімдеріміз және бизнес мүмкіндіктері туралы сұрақтарыңыз бар ма? Қажетті жауаптар мен пайдалы ақпаратты осы жерден табыңыз.",
                 "href": "faqs.php",
-                "label": "ЖАУАПТАРДЫ ТАБЫҢЫЗ"
+                "label": "ЖАУАПТАРДЫ ТАБЫҢЫЗ",
+                "id": "faqs"
               }
             ]
           }
@@ -2311,25 +2472,29 @@
                 "title": "РЕСУРСЫ ДЛЯ BA",
                 "body": "Получите доступ к скачиваемым руководствам, материалам и ресурсам для поддержки вашего бизнеса.",
                 "href": "https://distributor.joinignite.com/",
-                "label": "ИЗУЧИТЬ РЕСУРСЫ"
+                "label": "ИЗУЧИТЬ РЕСУРСЫ",
+                "id": "ba-resources"
               },
               {
                 "title": "ИНСТРУМЕНТЫ ДЛЯ BA",
                 "body": "Найдите необходимые скачиваемые инструменты и материалы для организации, управления и развития бизнеса.",
                 "href": "https://distributor.joinignite.com/",
-                "label": "ОТКРЫТЬ ИНСТРУМЕНТЫ BA"
+                "label": "ОТКРЫТЬ ИНСТРУМЕНТЫ BA",
+                "id": "ba-tools"
               },
               {
                 "title": "ОБУЧЕНИЕ",
                 "body": "Расширяйте знания, совершенствуйте навыки и оставайтесь на связи с помощью учебных программ и мероприятий IGNITE.",
                 "href": "events.php",
-                "label": "ИЗУЧИТЬ ОБУЧЕНИЕ"
+                "label": "ИЗУЧИТЬ ОБУЧЕНИЕ",
+                "id": "training"
               },
               {
                 "title": "ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ",
                 "body": "Есть вопросы? Найдите полезные ответы об IGNITE, продукции и бизнес-возможностях.",
                 "href": "faqs.php",
-                "label": "НАЙТИ ОТВЕТЫ"
+                "label": "НАЙТИ ОТВЕТЫ",
+                "id": "faqs"
               }
             ]
           }
@@ -2351,19 +2516,22 @@
                 "title": "IGNITE BLOG",
                 "body": "Explore fresh perspectives, inspiring stories, and insights on entrepreneurship, innovation, and the evolving world of social commerce.",
                 "href": "blog.php",
-                "label": "EXPLORE THE BLOG"
+                "label": "EXPLORE THE BLOG",
+                "id": "blog"
               },
               {
                 "title": "TRAINING & EVENTS",
                 "body": "Discover opportunities to learn, connect, and grow. Explore upcoming training programmes, events, and our training calendar to stay engaged with the IGNITE community.",
                 "href": "events.php",
-                "label": "VIEW TRAINING & EVENTS"
+                "label": "VIEW TRAINING & EVENTS",
+                "id": "events"
               },
               {
                 "title": "POLICIES",
                 "body": "Access important policies and guidelines designed to promote transparency, accountability, and responsible business practices across IGNITE.",
                 "href": "policies.php",
-                "label": "VIEW POLICIES"
+                "label": "VIEW POLICIES",
+                "id": "policies"
               }
             ]
           }
@@ -2383,19 +2551,22 @@
                 "title": "IGNITE БЛОГЫ",
                 "body": "Кәсіпкерлік, инновациялар және әлеуметтік коммерцияның даму үрдістері туралы жаңа көзқарастармен, шабыттандыратын оқиғалармен және құнды сараптамалық материалдармен танысыңыз.",
                 "href": "blog.php",
-                "label": "БЛОГТЫ ОҚУ"
+                "label": "БЛОГТЫ ОҚУ",
+                "id": "blog"
               },
               {
                 "title": "ОҚЫТУ ЖӘНЕ ІС-ШАРАЛАР",
                 "body": "Білім алу, байланыс орнату және даму мүмкіндіктерін ашыңыз. IGNITE қауымдастығымен белсенді байланыста болу үшін алдағы оқу бағдарламаларымен, іс-шаралармен және оқу күнтізбесімен танысыңыз.",
                 "href": "events.php",
-                "label": "ОҚЫТУ БАҒДАРЛАМАЛАРЫ МЕН ІС-ШАРАЛАРДЫ КӨРУ"
+                "label": "ОҚЫТУ БАҒДАРЛАМАЛАРЫ МЕН ІС-ШАРАЛАРДЫ КӨРУ",
+                "id": "events"
               },
               {
                 "title": "САЯСАТТАР МЕН ЕРЕЖЕЛЕР",
                 "body": "IGNITE аясында ашықтықты, жауапкершілікті және бизнесті адал жүргізу қағидаттарын нығайтуға арналған маңызды саясаттар мен нұсқаулықтарға қол жеткізіңіз.",
                 "href": "policies.php",
-                "label": "САЯСАТТАРМЕН ТАНЫСУ"
+                "label": "САЯСАТТАРМЕН ТАНЫСУ",
+                "id": "policies"
               }
             ]
           }
@@ -2415,24 +2586,113 @@
                 "title": "БЛОГ IGNITE",
                 "body": "Откройте свежие взгляды, вдохновляющие истории и идеи о предпринимательстве, инновациях и меняющемся мире социальной коммерции.",
                 "href": "blog.php",
-                "label": "ПЕРЕЙТИ В БЛОГ"
+                "label": "ПЕРЕЙТИ В БЛОГ",
+                "id": "blog"
               },
               {
                 "title": "ОБУЧЕНИЕ И МЕРОПРИЯТИЯ",
                 "body": "Находите возможности учиться, знакомиться и расти. Изучите ближайшие учебные программы, мероприятия и календарь обучения, чтобы оставаться частью сообщества IGNITE.",
                 "href": "events.php",
-                "label": "ПОСМОТРЕТЬ ОБУЧЕНИЕ И МЕРОПРИЯТИЯ"
+                "label": "ПОСМОТРЕТЬ ОБУЧЕНИЕ И МЕРОПРИЯТИЯ",
+                "id": "events"
               },
               {
                 "title": "ПОЛИТИКИ И ПРАВИЛА",
                 "body": "Ознакомьтесь с важными политиками и рекомендациями, поддерживающими прозрачность, ответственность и добросовестное ведение бизнеса в IGNITE.",
                 "href": "policies.php",
-                "label": "ПОСМОТРЕТЬ ПРАВИЛА"
+                "label": "ПОСМОТРЕТЬ ПРАВИЛА",
+                "id": "policies"
               }
             ]
           }
         ],
         "image": "kazakhstan/almaty-learning.jpg"
+      }
+    },
+    "support": {
+      "en": {
+        "title": "Support",
+        "heading": "HERE TO HELP. EVERY STEP OF THE WAY.",
+        "intro": "Have a question or need assistance? We're here to help you find the answers and support you need.\n\nWhether you're looking for guidance, exploring helpful information, or reaching out to our team, discover the right support to make your IGNITE experience easier and more seamless.",
+        "sections": [
+          {
+            "title": "Support",
+            "type": "cards",
+            "items": [
+              {
+                "title": "CONTACT US",
+                "body": "LET'S START A CONVERSATION.\n\nHave a question, concern, or feedback to share? Get in touch with the IGNITE team for assistance with your enquiries.",
+                "href": "contact.php",
+                "label": "GET IN TOUCH",
+                "id": "contact"
+              },
+              {
+                "title": "HELP CENTRE",
+                "body": "FIND ANSWERS. MOVE FORWARD.\n\nLooking for information or guidance? Explore our Help Centre for answers to common questions, helpful resources, and support on navigating your IGNITE experience.",
+                "href": "help.php",
+                "label": "VISIT HELP CENTRE",
+                "id": "help"
+              }
+            ]
+          }
+        ],
+        "image": "about.png"
+      },
+      "kk": {
+        "title": "Қолдау",
+        "heading": "СІЗГЕ КӨМЕКТЕСУГЕ ДАЙЫНБЫЗ. ӘР ҚАДАМДА ЖАНЫҢЫЗДАМЫЗ.",
+        "intro": "Сұрағыңыз бар ма немесе көмек қажет пе? Сізге қажетті жауаптар мен қолдауды ұсынуға әрдайым дайынбыз.\n\nБағыт-бағдар іздесеңіз, пайдалы ақпаратпен танысқыңыз келсе немесе біздің командамен байланыс орнатқыңыз келсе, IGNITE тәжірибеңізді жеңіл әрі ыңғайлы етуге көмектесетін қолдау мүмкіндіктерін осы жерден табыңыз.",
+        "sections": [
+          {
+            "title": "Қолдау",
+            "type": "cards",
+            "items": [
+              {
+                "title": "БІЗБЕН БАЙЛАНЫС",
+                "body": "ӘҢГІМЕНІ БІРГЕ БАСТАЙЫҚ.\n\nСұрағыңыз, мәселеңіз немесе бөліскіңіз келетін пікіріңіз бар ма? Сұрақтарыңыз бойынша көмек алу үшін IGNITE командасына хабарласыңыз.",
+                "href": "contact.php",
+                "label": "БІЗБЕН БАЙЛАНЫС ОРНАТЫҢЫЗ",
+                "id": "contact"
+              },
+              {
+                "title": "КӨМЕК ОРТАЛЫҒЫ",
+                "body": "ЖАУАПТАРДЫ ТАБЫҢЫЗ. АЛҒА ҚАДАМ БАСЫҢЫЗ.\n\nАқпарат немесе бағыт-бағдар іздеп жүрсіз бе? Жиі қойылатын сұрақтарға жауаптар, пайдалы ресурстар және IGNITE платформасын тиімді пайдалануға көмектесетін қолдау алу үшін Көмек орталығымызбен танысыңыз.",
+                "href": "help.php",
+                "label": "КӨМЕК ОРТАЛЫҒЫНА ӨТУ",
+                "id": "help"
+              }
+            ]
+          }
+        ],
+        "image": "about.png"
+      },
+      "ru": {
+        "title": "Поддержка",
+        "heading": "ГОТОВЫ ПОМОЧЬ. НА КАЖДОМ ЭТАПЕ.",
+        "intro": "Есть вопрос или нужна помощь? Мы поможем найти необходимые ответы и поддержку.\n\nНужен ли вам совет, полезная информация или связь с нашей командой — найдите подходящую поддержку, чтобы взаимодействие с IGNITE стало проще и удобнее.",
+        "sections": [
+          {
+            "title": "Поддержка",
+            "type": "cards",
+            "items": [
+              {
+                "title": "СВЯЗАТЬСЯ С НАМИ",
+                "body": "ДАВАЙТЕ НАЧНЁМ ОБЩЕНИЕ.\n\nЕсть вопрос, проблема или отзыв? Свяжитесь с командой IGNITE, чтобы получить помощь по вашему обращению.",
+                "href": "contact.php",
+                "label": "СВЯЗАТЬСЯ",
+                "id": "contact"
+              },
+              {
+                "title": "ЦЕНТР ПОМОЩИ",
+                "body": "НАХОДИТЕ ОТВЕТЫ. ДВИГАЙТЕСЬ ВПЕРЁД.\n\nИщете информацию или рекомендации? В нашем Центре помощи вы найдёте ответы на частые вопросы, полезные ресурсы и поддержку при знакомстве с IGNITE.",
+                "href": "help.php",
+                "label": "ПЕРЕЙТИ В ЦЕНТР ПОМОЩИ",
+                "id": "help"
+              }
+            ]
+          }
+        ],
+        "image": "about.png"
       }
     },
     "policies": {

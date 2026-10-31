@@ -686,5 +686,13 @@
     "eyebrow": "IGNITE",
     "section": "Success Stories",
     "image": "kazakhstan/almaty-learning.jpg"
+  },
+  "support": {
+    "title": "Support",
+    "heading": "HERE TO HELP. EVERY STEP OF THE WAY.",
+    "intro": "Have a question or need assistance? We're here to help you find the answers and support you need.\n\nWhether you're looking for guidance, exploring helpful information, or reaching out to our team, discover the right support to make your IGNITE experience easier and more seamless.",
+    "eyebrow": "IGNITE",
+    "section": "Support",
+    "image": "about.png"
   }
 }
